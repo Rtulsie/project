@@ -3,14 +3,18 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
+import "./layout.css"
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
+        <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'/>
+
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -49,7 +53,10 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div>
+        <h1 className="fontStyle">Polish Me Pretty Beauty Boutique</h1>
+        {children}
+      </div>
       <Footer />
     </div>
   )

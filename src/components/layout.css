@@ -1,0 +1,33 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 4.5em;
+  }
+  
+  .themeColor{
+    background-color: pink;
+    color: black;
+    font: outline;
+  }
+
+  .content-padding{
+    padding-bottom: 4.5em;
+  }
+
+  .adjustment-padding {
+    padding-top: 4.5em;
+  }
+
+
+  .fontStyle{
+    font-family: 'Dawning of a New Day';
+    padding: 0.25em 0 0 0.25em;
+  }
+
+
