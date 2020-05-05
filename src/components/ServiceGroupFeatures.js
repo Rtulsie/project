@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Link} from 'gatsby'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -14,7 +15,9 @@ const FeatureGrid = ({ gridItems }) => (
             </Col>
             <Col xs={{span: 12, order: 12}} md={{span: 8, order: 1}}>
                 <h4>{item.heading}</h4>
-                <p>{item.text}</p>
+                <p className="font-italic font-weight-light">{item.text}</p>
+                    <Link to="/contact">Book Your Apppointment Now</Link>
+                    <br/><a href="tel:8683398239">Get in Touch</a>
             </Col>
         </Fragment>
       ))}

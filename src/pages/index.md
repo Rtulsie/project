@@ -15,7 +15,7 @@ services_group1:
   blurbs:
     - image: /img/blog-index.jpg
       heading: SPA PEDICURE
-      text: We all know how great it feels to walk out of a Nail Spa and be satisfied with the service we received.
+      text: We all know how great it feels to walk out of a Nail Spa and be satisfied with the service we received. Our highly trained staff are here to tackle all your needs with a professional Pedicure that will leave you looking and feeling phenomenal. Come in and give us an hour of your time — you’ll be glad you did!
 main:
   text1: We offer unparalleled services for all of your beauty needs.
   list:
