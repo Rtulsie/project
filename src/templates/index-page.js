@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import ListFeatures from '../components/ListFeatures'
+import ServiceGroupFeatures from '../components/ServiceGroupFeatures'
 import { Container, Row} from 'react-bootstrap'
 
 
@@ -100,7 +102,7 @@ export const IndexPageTemplate = ({
             >
               "{secondImage.caption}"
             </h2>
-            <h4
+            <h5
               className="has-text-weight-bold is-size-1 text-center"
               style={{
               //boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
@@ -109,10 +111,13 @@ export const IndexPageTemplate = ({
               padding: '1rem',
               }}
             >
-              Hadda Put List
-            </h4>
+              <ListFeatures gridItems={main.list} />
+            </h5>
           </div>
         </div>
+      </Row>
+      <Row>
+        <ServiceGroupFeatures gridItems={services_group1.blurbs} />      
       </Row>
       <Row>
         <div
@@ -159,6 +164,9 @@ export const IndexPageTemplate = ({
             </h4>
           </div>
         </div>
+      </Row>
+      <Row>
+        <ServiceGroupFeatures gridItems={services_group2.blurbs} />      
       </Row>
       <Row>
         <div
@@ -251,6 +259,9 @@ export const IndexPageTemplate = ({
             </h4>
           </div>
         </div>
+      </Row>
+      <Row>
+        <ServiceGroupFeatures gridItems={services_group1.blurbs} />      
       </Row>
     </Container>
   </div>
@@ -369,7 +380,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            title
+            heading
             text
           }
         }
@@ -401,7 +412,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            title
+            heading
             text
           }
         }
@@ -436,7 +447,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            title
+            heading
             text
           }
         }

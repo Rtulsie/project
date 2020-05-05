@@ -14,13 +14,13 @@ second_image:
 services_group1:
   blurbs:
     - image: /img/blog-index.jpg
-      title: SPA PEDICURE
+      heading: SPA PEDICURE
       text: We all know how great it feels to walk out of a Nail Spa and be satisfied with the service we received.
 main:
   text1: We offer unparalleled services for all of your beauty needs.
   list:
     - item: Nails
-    - item: Mannicure
+    - item: Manicure
   text2: AND MUCH MUCH MORE
   text3: Contact us today to see the many other ways we can pamper you.
 third_image: 
@@ -30,7 +30,7 @@ third_image:
 services_group2:
   blurbs:
     - image: /img/blog-index.jpg
-      title: SPA PEDICURE
+      heading: SPA PEDICURE
       text: We all know how great it feels to walk out of a Nail Spa and be satisfied with the service we received.
 fourth_image: 
   image: /img/blog-index.jpg
@@ -43,6 +43,6 @@ fifth_image:
 services_group3:
   blurbs:
     - image: /img/blog-index.jpg
-      title: SPA PEDICURE
+      heading: SPA PEDICURE
       text: We all know how great it feels to walk out of a Nail Spa and be satisfied with the service we received.
 ---
