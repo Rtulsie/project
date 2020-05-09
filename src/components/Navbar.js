@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import PropTypes from 'prop-types'
 
 const Header = ({ siteTitle }) => (
@@ -22,7 +22,10 @@ const Header = ({ siteTitle }) => (
           <Nav.Link href="/products">Products</Nav.Link>
           <Nav.Link href="/gallery">Gallery</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/contact">Contact Us</Nav.Link>
+          <NavDropdown title="Contact">
+            <NavDropdown.Item href="/contact">Contact Us</NavDropdown.Item>
+            <NavDropdown.Item href="/career">Career</NavDropdown.Item>
+          </NavDropdown>
         </Nav >
         <Nav className="justify-content-end">
           <Nav.Link

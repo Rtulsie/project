@@ -12,24 +12,27 @@ export const IndexPageTemplate = ({
   image4,
   image5,
 }) => (
-  <Container fluid className="content-padding">
-    <Carousel style={{height:"600px"}}>
-      <Carousel.Item className="uniformedCarousel">
+  <Container fluid>
+    <Carousel >
+      <Carousel.Item>
         <Img fluid={image1.childImageSharp.fluid} alt="First Carousel" />
       </Carousel.Item>
-      <Carousel.Item className="uniformedCarousel">
+      <Carousel.Item>
         <Img fluid={image2.childImageSharp.fluid} alt="Second Carousel" />
       </Carousel.Item>
-      <Carousel.Item className="uniformedCarousel">
+      <Carousel.Item>
         <Img fluid={image3.childImageSharp.fluid} alt="Third Carousel" />
       </Carousel.Item>
-      <Carousel.Item className="uniformedCarousel">
+      <Carousel.Item>
         <Img fluid={image4.childImageSharp.fluid} alt="Fouth Carousel" />
       </Carousel.Item>
-      <Carousel.Item className="uniformedCarousel">
+      <Carousel.Item>
         <Img fluid={image5.childImageSharp.fluid} alt="Fifth Carousel" />          
       </Carousel.Item>
     </Carousel>
+    <Container>
+      Products
+    </Container>
   </Container>
 )
 
