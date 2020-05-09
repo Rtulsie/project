@@ -16,8 +16,8 @@ const FeatureGrid = ({ gridItems }) => (
             <Col xs={{span: 12, order: 12}} md={{span: 8, order: 1}}>
                 <h4>{item.heading}</h4>
                 <p className="font-italic font-weight-light">{item.text}</p>
-                    <Link to="/contact">Book Your Apppointment Now</Link>
-                    <br/><a href="tel:8683398239">Get in Touch</a>
+                <Link to="/contact">Book Your Apppointment Now</Link>
+                <br/><a href="tel:18683036051">Get in Touch</a>
             </Col>
         </Fragment>
       ))}
@@ -31,6 +31,7 @@ FeatureGrid.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       heading: PropTypes.string,
       text: PropTypes.string,
+      list: PropTypes.array,
     })
   ),
 }
