@@ -2,10 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import { TweenMax, Power3, TimelineLite} from "gsap";
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
-import ScrollMagic from "scrollmagic";
 import {Container, Row, Col} from 'react-bootstrap'
-
-var controller = new ScrollMagic.Controller();
 
 function Footer () {
 let location = useRef(null);
@@ -85,13 +82,4 @@ TweenMax.from(social, 3, { x: -100, ease: Power3.easeOut})
     </footer>
   )
 }
-new ScrollMagic.Scene({
-  triggerElement: "#trigger",
-  triggerHook: 0.9,
-  offset: 50,
-})
-.setClassToggle("#footerReveal", "visible")
-.addIndicators()
-.addTo(controller)
-
 export default Footer
