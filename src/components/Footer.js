@@ -10,9 +10,11 @@ let links = useRef(null);
 let social = useRef(null);
 
 useEffect (() => {
-TweenMax.from(location, 3, { x: -100, ease: Power3.easeOut})
+/*TweenMax.from(location, 3, { x: -1200, ease: Power3.easeOut})
 TweenMax.from(links, 3, { x: -100, ease: Power3.easeOut})
 TweenMax.from(social, 3, { x: -100, ease: Power3.easeOut})
+
+ref={el=> {location = el}}*/
 }, [])
 
   return (
@@ -20,7 +22,13 @@ TweenMax.from(social, 3, { x: -100, ease: Power3.easeOut})
       <Container fluid className="themeColor">
         <Container className="trigger">
           <Row className="adjustment-padding fooerReveal">
-            <Col xs={12} md={4} className="locationAnimation" ref={el=> {location = el}}>
+            <Col 
+              xs={12} md={4}
+              data-sal="slide-right"
+              data-sal-duration ="300"
+              data-sal-delay="300"
+              data-sal-easing="easeOutBounce"
+              >
               <h3>OUR OFFICE</h3>
               <br/>
               <p>
@@ -31,7 +39,13 @@ TweenMax.from(social, 3, { x: -100, ease: Power3.easeOut})
                 <br/>Email: polishmeprettybb@gmail.com
               </p>
             </Col>
-            <Col xs={12} md={4} className="linksAnimation" ref={el=> {links = el}}>
+            <Col 
+              xs={12} md={4}
+              data-sal="slide-up"
+              data-sal-duration ="300"
+              data-sal-delay="300"
+              data-sal-easing="easeOutBounce"
+              >
               <ul>
                 <li>
                   <h3>QUICK LINKS</h3>
@@ -53,7 +67,12 @@ TweenMax.from(social, 3, { x: -100, ease: Power3.easeOut})
                 </li>
               </ul>
             </Col>
-            <Col xs={12} md={4} className="socialAnimation" ref={el=> {social = el}}>
+            <Col 
+              xs={12} md={4}data-sal="slide-left"
+              data-sal-duration ="300"
+              data-sal-delay="300"
+              data-sal-easing="easeOutBounce"
+            >
               <h3>FOLLOW US ON:</h3>
               <br/>
               <div className="social">
