@@ -11,9 +11,8 @@ html {
   }
   
   .themeColor{
-    background-color: pink;
-    color: black;
-    font: outline;
+    background-image: radial-gradient( #E58AB7, #502E3E);
+    
   }
 
   .content-padding{
@@ -41,12 +40,12 @@ html {
     padding-right: 22px;
   }
 
-  .linkColor{
-    color: black;
+  .fontColor{
+    color: white;
   }
 
-  a:hover{
-    color: crimson;
+  .linkColor{
+    color: black
   }
 
   h3{

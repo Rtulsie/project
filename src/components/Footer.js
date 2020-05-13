@@ -4,6 +4,7 @@ import ButtonLink from '../utils/fontawesome'
 import { TweenMax, Power3, TimelineLite} from "gsap";
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
+import logo from '../img/logo.svg'
 import {Container, Row, Col} from 'react-bootstrap'
 import Img from '../utils/fontawesome';
 
@@ -24,14 +25,15 @@ ref={el=> {location = el}}*/
   return (
     <footer>
       <Container fluid className="themeColor">
-        <Container className="trigger">
-          <Row className="adjustment-padding fooerReveal">
+        <Container>
+          <Row className="adjustment-padding">
             <Col 
               xs={12} md={4}
               data-sal="slide-right"
               data-sal-duration ="1000"
               data-sal-delay="300"
               data-sal-easing="ease"
+              className="fontColor"
               >
               <h3>OUR OFFICE</h3>
               <div>
@@ -69,24 +71,24 @@ ref={el=> {location = el}}*/
               data-sal-delay="500"
               data-sal-easing="ease"
               >
-              <ul className="text-center">
+              <ul>
                 <li>
                   <h3>QUICK LINKS</h3>
                 </li>
                 <li>
-                  <a className="linkColor" href="/">Home</a>
+                  <a className="fontColor" href="/">Home</a>
                 </li>
                 <li>
-                  <a className="linkColor" href="/services">Services</a>
+                  <a className="fontColor" href="/services">Services</a>
                 </li>
                 <li>
-                  <a className="linkColor" href="/products">Products</a>
+                  <a className="fontColor" href="/products">Products</a>
                 </li>
                 <li>
-                  <a className="linkColor" href="/about">About</a>
+                  <a className="fontColor" href="/about">About</a>
                 </li>
                 <li>
-                  <a className="linkColor" href="/contact">Contact</a>
+                  <a className="fontColor" href="/contact">Contact</a>
                 </li>
               </ul>
             </Col>
@@ -96,8 +98,13 @@ ref={el=> {location = el}}*/
               data-sal-delay="700"
               data-sal-easing="ease"
               className="my-auto"
-            >
-              <h3>FOLLOW US ON:</h3>
+            ><br/>
+              <img 
+                  src={logo}
+                  width="100"
+                  alt="Logo"
+                  /><br/>
+              <p>FOLLOW US ON:</p>
                 <div>
                   <a title="facebook" href="https://www.facebook.com/POLISHMEPRETTY868/">
                     <img
@@ -116,7 +123,7 @@ ref={el=> {location = el}}*/
                 </div>
             </Col>
           </Row>
-          <Row className="adjustment-padding">
+          <Row className="adjustment-padding fontColor">
             <p>©2019 by Polish Me Pretty Beauty Boutique.</p>
           </Row>
         </Container>
