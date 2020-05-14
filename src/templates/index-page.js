@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Img from 'gatsby-image'
-import { Container, Carousel} from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 
 export const IndexPageTemplate = ({
   image1,
@@ -13,9 +12,8 @@ export const IndexPageTemplate = ({
   image5,
 }) => (
   <Container fluid>
-    
     <Container>
-      Products
+      HOME PAGE CONTENT GOES HERE!!!!!!!!!
     </Container>
   </Container>
 )

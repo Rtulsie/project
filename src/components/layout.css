@@ -23,9 +23,13 @@ html {
     padding-top: 4.5em;
   }
 
-  .fontStyle{
-    font-family: 'Dawning of a New Day';
+  .fontStyle {
     padding: 0.25em 0 0 0.25em;
+    font-size: 4em;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Sofia';
   }
 
   .footerAlign{
@@ -48,6 +52,9 @@ html {
     color: black
   }
 
-  h3{
-    font-family: 'Sofia';
+  .filterWhite {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(102%) contrast(101%);
+  }
+  .socialIcon {
+    padding-right: 35px;
   }

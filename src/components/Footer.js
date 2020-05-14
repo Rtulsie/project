@@ -4,7 +4,8 @@ import ButtonLink from '../utils/fontawesome'
 import { TweenMax, Power3, TimelineLite} from "gsap";
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
-import logo from '../img/logo.svg'
+import whatsapp from '../img/social/whatsapp.svg'
+import logo1 from '../img/logo1.svg'
 import {Container, Row, Col} from 'react-bootstrap'
 import Img from '../utils/fontawesome';
 
@@ -33,32 +34,31 @@ ref={el=> {location = el}}*/
               data-sal-duration ="1000"
               data-sal-delay="300"
               data-sal-easing="ease"
-              className="fontColor"
               >
               <h3>OUR OFFICE</h3>
               <div>
-                <div className="specialFooterAlign">
-                  <Img icon={'map-marker-alt'} />
+                <div className="specialFooterAlign fontColor">
+                  <Img icon={'map-marker-alt'}/>
                 </div>
-                <div style={{display: "inline-block"}}>
+                <div style={{display: "inline-block"}} className="fontColor">
                   Address:
                   <br/>98e Endeavour Road, Chaguanas,
                   <br/>Trinidad and Tobago.
                 </div>
               </div>
               <div>
-                <div className="footerAlign">
+                <div className="footerAlign fontColor">
                   <Img icon={'phone-alt'} />
                 </div>
-                <div style={{display: "inline-block"}}>
+                <div style={{display: "inline-block"}} className="fontColor">
                   Phone: (868) 303-6051
                 </div>
               </div>
               <div>
-                <div className="footerAlign">
+                <div className="footerAlign fontColor">
                   <Img icon={'envelope'} />
                 </div>     
-                <div style={{display:"inline-block"}}>
+                <div style={{display:"inline-block"}} className="fontColor">
                   Email: polishmeprettybb@gmail.com
                 </div>
               </div>
@@ -91,33 +91,46 @@ ref={el=> {location = el}}*/
                   <a className="fontColor" href="/contact">Contact</a>
                 </li>
               </ul>
+              <br/>
             </Col>
             <Col 
-              xs={12} md={4}data-sal="slide-right"
+              xs={12} md={4}
+              data-sal="slide-right"
               data-sal-duration ="1000"
               data-sal-delay="700"
               data-sal-easing="ease"
-              className="my-auto"
-            ><br/>
+              
+            >
               <img 
-                  src={logo}
-                  width="100"
+                  src={logo1}
+                  width= '170'
                   alt="Logo"
-                  /><br/>
-              <p>FOLLOW US ON:</p>
+                  className="filterWhite"
+              />
+              <h5>FOLLOW US ON:</h5>
                 <div>
-                  <a title="facebook" href="https://www.facebook.com/POLISHMEPRETTY868/">
+                  <a title="facebook" href="https://www.facebook.com/POLISHMEPRETTY868/" className="socialIcon">
                     <img
                       src={facebook}
                       alt="Facebook"
                       style={{ width: '2em', height: '2em' }}
+                      className="filterWhite"
                     />
                   </a>
-                  <a title="instagram" href="https://www.instagram.com/polishmepretty_tt/">
+                  <a title="instagram" href="https://www.instagram.com/polishmepretty_tt/" className="socialIcon">
                     <img
                       src={instagram}
                       alt="Instagram"
                       style={{ width: '2em', height: '2em' }}
+                      className="filterWhite"
+                    />
+                  </a>
+                  <a title="instagram" href="tel:+18683036051" className="socialIcon">
+                    <img
+                      src={whatsapp}
+                      alt="Whatsapp"
+                      style={{ width: '2em', height: '2em' }}
+                      className="filterWhite"
                     />
                   </a>
                 </div>

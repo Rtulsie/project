@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-
 import {Container, Col, Row} from 'react-bootstrap'
 
 export const ServicePageTemplate = ({
