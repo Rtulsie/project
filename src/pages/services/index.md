@@ -4,7 +4,7 @@ path: /services
 templateKey: service-page
 title: Services
 image: /img/service-page-background.jpeg
-caption: THE ONE STOP BEAUTY HEAVEN FOR ALL YOUR GLAMOUR SERVICES
+caption: "       "
 services:
   item3: Nail Bar
   item4: Waxing
