@@ -37,9 +37,9 @@ serviceone:
   extra:
     add10: Gel Top Coat
     price8_1: 10.00 per Nail
-    price8_2: 50.00 entire Hands
+    price8_2: "0.00"
     price9_1: 10.00 per Nail
-    price9_2: 50.00 entire Hands
+    price9_2: "0.00"
     price1: "75.00"
     price10: "35.00"
     price2: "75.00"
