@@ -109,7 +109,7 @@ ref={el=> {location = el}}*/
               />
               <h5>FOLLOW US ON:</h5>
                 <div>
-                  <a title="facebook" href="https://www.facebook.com/POLISHMEPRETTY868/" className="socialIcon">
+                  <a title="facebook" href="https://www.facebook.com/POLISHMEPRETTY868/" target="_blank" className="socialIcon">
                     <img
                       src={facebook}
                       alt="Facebook"
@@ -117,7 +117,7 @@ ref={el=> {location = el}}*/
                       className="filterWhite"
                     />
                   </a>
-                  <a title="instagram" href="https://www.instagram.com/polishmepretty_tt/" className="socialIcon">
+                  <a title="instagram" href="https://www.instagram.com/polishmepretty_tt/" target="_blank" className="socialIcon">
                     <img
                       src={instagram}
                       alt="Instagram"
@@ -125,7 +125,7 @@ ref={el=> {location = el}}*/
                       className="filterWhite"
                     />
                   </a>
-                  <a title="instagram" href="tel:+18683036051" className="socialIcon">
+                  <a title="instagram" href="tel:+18683036051" target="_blank" className="socialIcon">
                     <img
                       src={whatsapp}
                       alt="Whatsapp"

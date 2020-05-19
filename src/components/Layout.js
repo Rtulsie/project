@@ -13,7 +13,6 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'/>
         <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
         <html lang="en" />
         <title>{title}</title>

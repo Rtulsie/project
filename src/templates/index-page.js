@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { Container} from 'react-bootstrap'
+import Img from 'gatsby-image'
 
 export const IndexPageTemplate = ({
   image1,
@@ -12,7 +13,9 @@ export const IndexPageTemplate = ({
   image5,
 }) => (
   <Container fluid>
+      <Img style={{maxWidth: "100%", paddingTop:"100px"}} fluid={image1.childImageSharp.fluid} alt="First" />
     <Container>
+
       HOME PAGE CONTENT GOES HERE!!!!!!!!!
     </Container>
   </Container>

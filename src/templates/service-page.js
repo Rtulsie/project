@@ -76,12 +76,14 @@ export const ServicePageTemplate = ({
                         <Col xs={6} md="auto"><a href="#sixthService">{services.item6}</a></Col>
                         <Col xs={6} md="auto"><a href="#seventhService">{services.item7}</a></Col>
                         <Col xs={6} md="auto"><a href="#eighthService">{services.item8}</a></Col>
-                        <Col xs={12} md="auto"><a href="#ninthService">{services.item9}</a></Col>
+                        <Col xs={6} md="auto"><a href="#ninthService">{services.item9}</a></Col>
+                        <Col xs={6} md="auto"><a href="#ninthService">{services.item10}</a></Col>
+                        <Col xs={12} md="auto"><a href="#ninthService">{services.item11}</a></Col>
                     </Row>
                 </Container>
                 <Container className="content-padding">
                     <Row id='firstService' className="justify-content-center adjustment-padding">
-                        <h1 class>{services.item1}</h1>
+                        <h1 class>{serviceone.title}</h1>
                     </Row>
                     <Row>
                         <Col xs={12} md={3}  className="my-auto">
@@ -124,6 +126,7 @@ export const ServicePageTemplate = ({
                             </Row>                
                         </Col>
                     </Row>
+                    <br/>
                     <Row className="justify-content-center">
                         <h4>{serviceone.extra.name}</h4>
                     </Row>
@@ -149,16 +152,33 @@ export const ServicePageTemplate = ({
                 <Container fluid className="themeColor content-padding">
                     <Container>
                         <Row id='secondService' className="justify-content-center adjustment-padding" >
-                            <h1>{services.item2}</h1>
+                            <h1>{servicetwo.title}</h1>
                         </Row>
                         <Row>
                             <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
                                 <PreviewCompatibleImage imageInfo={servicetwo.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                <h5>{serviceone.type1}</h5>
-                                <p>{serviceone.text1}</p>
+                                <h5>{servicetwo.type1}</h5>
+                                <p>{servicetwo.text1}</p>
                             </Col>
+                            <Row>
+                                <Col xs={4} md="auto">
+                                <h5>Price:</h5>
+                                </Col>
+                                <Col xs={4} md="auto">
+                                    <p>Female: ${servicetwo.price1.female}</p>
+                                </Col> 
+                                <Col xs={4} md="auto">
+                                    <p>Male: ${servicetwo.price1.male}</p>
+                                </Col> 
+                            </Row><br/>
+                            <Row>
+                                <Col>
+                                    <h5>{servicetwo.type2}</h5>
+                                    <p>{servicetwo.text2}</p>
+                                </Col>
+                            </Row>
                         </Row>
                     </Container>
                 </Container>
@@ -268,8 +288,11 @@ ServicePageTemplate.propTypes = {
         item7: PropTypes.string,
         item8: PropTypes.string,
         item9: PropTypes.string,
+        item10: PropTypes.string,
+        item11: PropTypes.string,
     }),
     serviceone: PropTypes.shape({
+        title: PropTypes.string,
         type1: PropTypes.string,
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
         text1: PropTypes.string,
@@ -309,7 +332,44 @@ ServicePageTemplate.propTypes = {
         }),
     }),
     servicetwo: PropTypes.shape({
+        title: PropTypes.string,
+        type1: PropTypes.string,
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        text1: PropTypes.string,
+        price1: PropTypes.shape({
+            female: PropTypes.string,
+            male: PropTypes.string,
+        }),
+        text2: PropTypes.string,
+        price2: PropTypes.shape({
+            female: PropTypes.string,
+            male: PropTypes.string,
+        }),
+        extra: PropTypes.shape({
+            name: PropTypes.string,
+            add1: PropTypes.string,
+            price1: PropTypes.string,
+            add2: PropTypes.string,
+            price2: PropTypes.string,
+            add3: PropTypes.string,
+            price3: PropTypes.string,
+            add4: PropTypes.string,
+            price4: PropTypes.string,
+            add5: PropTypes.string,
+            price5: PropTypes.string,
+            add6: PropTypes.string,
+            price6: PropTypes.string,
+            add7: PropTypes.string,
+            price7: PropTypes.string,
+            add8: PropTypes.string,
+            price8_1: PropTypes.string,
+            price8_2: PropTypes.string,
+            add9: PropTypes.string,
+            price9_1: PropTypes.string,
+            price9_2: PropTypes.string,
+            add10: PropTypes.string,
+            price10: PropTypes.string,
+        }),
     }),
     servicethree: PropTypes.shape({
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -394,6 +454,8 @@ export const servicePageQuery = graphql`
                     item7
                     item8
                     item9
+                    item10
+                    item11
                 }
                 serviceone {
                     image1 {
@@ -406,6 +468,7 @@ export const servicePageQuery = graphql`
                             }
                         }
                     }
+                    title
                     type1
                     text1
                     price1 {
@@ -454,6 +517,44 @@ export const servicePageQuery = graphql`
                                 }
                             }
                         }
+                    }
+                    title
+                    type1
+                    text1
+                    price1 {
+                        female
+                        male
+                    }
+                    type2
+                    text2
+                    price2 {
+                        female
+                        male
+                    }
+                    extra {
+                        name
+                        add1
+                        price1
+                        add2
+                        price2
+                        add3
+                        price3
+                        add4
+                        price4
+                        add5
+                        price5
+                        add6
+                        price6
+                        add7
+                        price7
+                        add8
+                        price8_1
+                        price8_2
+                        add9
+                        price9_1
+                        price9_2
+                        add10
+                        price10
                     }
                 }
                 servicethree {

@@ -6,16 +6,19 @@ title: Services
 image: /img/service-page-background.jpeg
 caption: "       "
 services:
-  item3: Nail Bar
-  item4: Waxing
-  item5: Make Up Services
-  item6: Jelly Spa Bath
-  item7: Hair Studio
-  item8: Massage Services
-  item9: Threading
   item1: Manicures
   item2: Pedicures
+  item3: Polish Only
+  item4: Nail Enhancements
+  item5: Extras/Accents
+  item6: Make Up Services
+  item7: Body Therapy
+  item8: Facials
+  item9: Hair
+  item10: Blow Bar Menu
+  item11: Body Waxing and Hair Removal
 serviceone:
+  title: Manicures
   image1:
     alt: Manicure picture
     image: /img/manicure.jpeg
@@ -45,7 +48,7 @@ serviceone:
     price2: "75.00"
     price3: "25.00"
     price4: "30.00"
-    name: Additional
+    name: You can upgrade your experience by including any of or even more than one of the following:-
     price5: 10.00 per Nail
     price6: 20.00 per Nail
     price7: 10.00 per Nail
@@ -59,9 +62,46 @@ serviceone:
     add8: Chrome
     add9: Foil
 servicetwo:
+  title: Pedicures
   image1:
     alt: Pedicure picture
     image: /img/pedicure.jpeg
+  type1: SPA Pedicure (1 hr)
+  text1: >
+    Foot Soak, Scrub, Exfoliations, Foot Mask, Massage, Polish
+  price1:
+    female: $300.00
+    male: $350.00
+  type2: Classic Pedicure (40 mins)
+  text2: >
+    Foat Soak, Exfoliations, Polish
+  price2:
+    female: $200.00
+    male: $250.00
+  extra:
+    name: Additional
+    add1: Jelly Pedicure
+    price1: $50.00
+    add2: Paraffin
+    price2: $50.00
+    add3: Painted Frech Tips
+    price3: $25.00
+    add4: Painted Frech Ombre
+    price4: $30.00
+    add5: Glitter Polish or (Accent Nail)
+    price5: $10.00 per Nail
+    add6: Nail Art
+    price6: $20.00 per Nail
+    add7: Gems
+    price7: $10.00 per Nail
+    add8: Chrome
+    price8_1: $10.00 per Nail
+    price8_2: $50.00 entire Hands
+    add9: Foil
+    price9_1: $10.00 per Nail
+    price9_2: $50.00 entire Hands
+    add10: Gel Top Coat
+    price10: $35.00 
 servicethree:
   image1:
     alt: Nail Bar picture
