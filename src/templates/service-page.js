@@ -66,7 +66,7 @@ export const ServicePageTemplate = ({
         </div>
         <div>
                 <Container>
-                    <h3>{heading}</h3>
+                    <h2>{heading}</h2>
                     <Row className="justify-content-center">
                         <Col xs={6} md="auto"><a href="#firstService">{services.item1}</a></Col>
                         <Col xs={6} md="auto"><a href="#secondService">{services.item2}</a></Col>
@@ -83,7 +83,7 @@ export const ServicePageTemplate = ({
                 </Container>
                 <Container className="content-padding">
                     <Row id='firstService' className="justify-content-center adjustment-padding">
-                        <h1 class>{serviceone.title}</h1>
+                        <h1>{serviceone.title}</h1>
                     </Row>
                     <Row>
                         <Col xs={12} md={3}  className="my-auto">
@@ -97,14 +97,14 @@ export const ServicePageTemplate = ({
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={4} md="auto">
+                                <Col xs="auto" md="auto">
                                 <h5>Price:</h5>
                                 </Col>
-                                <Col xs={4} md="auto">
-                                    <p>Female: ${serviceone.price1.female}</p>
+                                <Col xs="auto" md="auto">
+                                    <p>Female: {serviceone.price1.female}</p>
                                 </Col> 
-                                <Col xs={4} md="auto">
-                                    <p>Male: ${serviceone.price1.male}</p>
+                                <Col xs="auto" md="auto">
+                                    <p>Male: {serviceone.price1.male}</p>
                                 </Col> 
                             </Row><br/>
                             <Row>
@@ -114,14 +114,14 @@ export const ServicePageTemplate = ({
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={4} md="auto">
+                                <Col xs="auto" md="auto">
                                 <h5>Price:</h5>
                                 </Col>
-                                <Col xs={4} md="auto">
-                                    <p>Female: ${serviceone.price2.female}</p>
+                                <Col xs="auto" md="auto">
+                                    <p>Female: {serviceone.price2.female}</p>
                                 </Col> 
-                                <Col xs={4} md="auto">
-                                    <p>Male: ${serviceone.price2.male}</p>
+                                <Col xs="auto" md="auto">
+                                    <p>Male: {serviceone.price2.male}</p>
                                 </Col> 
                             </Row>                
                         </Col>
@@ -131,25 +131,25 @@ export const ServicePageTemplate = ({
                         <h4>{serviceone.extra.name}</h4>
                     </Row>
                     <Row>        
-                        <Col xs={6} md={2}>{serviceone.extra.add1}</Col><Col xs={6} md={2}>${serviceone.extra.price1}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add2}</Col><Col xs={6} md={2}>${serviceone.extra.price2}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add3}</Col><Col xs={6} md={2}>${serviceone.extra.price3}</Col>        
+                        <Col xs={6} md={2}>{serviceone.extra.add1}</Col><Col xs={6} md={2}>{serviceone.extra.price1}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add2}</Col><Col xs={6} md={2}>{serviceone.extra.price2}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add3}</Col><Col xs={6} md={2}>{serviceone.extra.price3}</Col>        
                     </Row>
                     <Row>        
-                        <Col xs={6} md={2}>{serviceone.extra.add4}</Col><Col xs={6} md={2}>${serviceone.extra.price4}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add10}</Col><Col xs={6} md={2}>${serviceone.extra.price10}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add6}</Col><Col xs={6} md={2}>${serviceone.extra.price6}</Col>        
+                        <Col xs={6} md={2}>{serviceone.extra.add4}</Col><Col xs={6} md={2}>{serviceone.extra.price4}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add10}</Col><Col xs={6} md={2}>{serviceone.extra.price10}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add6}</Col><Col xs={6} md={2}>{serviceone.extra.price6}</Col>        
                     </Row>
                     <Row>        
-                        <Col xs={6} md={2}>{serviceone.extra.add5}</Col ><Col xs={6} md={2}>${serviceone.extra.price5}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add8}</Col><Col xs={6} md={2}>${serviceone.extra.price8_1}<br/>${serviceone.extra.price8_2}</Col>
-                        <Col xs={6} md={2}>{serviceone.extra.add9}</Col><Col xs={6} md={2}>${serviceone.extra.price9_1}<br/>${serviceone.extra.price9_2}</Col>        
+                        <Col xs={6} md={2}>{serviceone.extra.add5}</Col ><Col xs={6} md={2}>{serviceone.extra.price5}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add8}</Col><Col xs={6} md={2}>{serviceone.extra.price8_1}<br/>{serviceone.extra.price8_2}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add9}</Col><Col xs={6} md={2}>{serviceone.extra.price9_1}<br/>{serviceone.extra.price9_2}</Col>        
                     </Row>
                     <Row>
-                        <Col xs={6} md={2}>{serviceone.extra.add7}</Col><Col xs={6} md={2}>${serviceone.extra.price7}</Col>
+                        <Col xs={6} md={2}>{serviceone.extra.add7}</Col><Col xs={6} md={2}>{serviceone.extra.price7}</Col>
                     </Row>        
                 </Container>
-                <Container fluid className="themeColor content-padding">
+                <Container fluid className="themeColor content-padding fontColor">
                     <Container>
                         <Row id='secondService' className="justify-content-center adjustment-padding" >
                             <h1>{servicetwo.title}</h1>
@@ -159,36 +159,72 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={servicetwo.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
+                                <br/>
                                 <h5>{servicetwo.type1}</h5>
                                 <p>{servicetwo.text1}</p>
+                                <Row>
+                                    <Col xs="auto" md="auto">
+                                        <h5>Price:</h5>
+                                    </Col>
+                                    <Col xs="auto" md="auto">
+                                        <p>Female: {servicetwo.price1.female}</p>
+                                    </Col> 
+                                    <Col xs="auto" md="auto">
+                                        <p>Male: {servicetwo.price1.male}</p>
+                                    </Col> 
+                                </Row><br/>
+                                <Row>
+                                    <Col>
+                                        <h5>{servicetwo.type2}</h5>
+                                        <p>{servicetwo.text2}</p>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="auto" md="auto">
+                                        <h5>Price:</h5>
+                                    </Col>
+                                    <Col xs="auto" md="auto">
+                                        <p>Female: {servicetwo.price2.female}</p>
+                                    </Col> 
+                                    <Col xs="auto" md="auto">
+                                        <p>Male: {servicetwo.price2.male}</p>
+                                    </Col> 
+                                </Row>
                             </Col>
-                            <Row>
-                                <Col xs={4} md="auto">
-                                <h5>Price:</h5>
-                                </Col>
-                                <Col xs={4} md="auto">
-                                    <p>Female: ${servicetwo.price1.female}</p>
-                                </Col> 
-                                <Col xs={4} md="auto">
-                                    <p>Male: ${servicetwo.price1.male}</p>
-                                </Col> 
-                            </Row><br/>
-                            <Row>
-                                <Col>
-                                    <h5>{servicetwo.type2}</h5>
-                                    <p>{servicetwo.text2}</p>
-                                </Col>
-                            </Row>
                         </Row>
+                        <br/>
+                        <Row className="justify-content-center">
+                            <h4>{servicetwo.extra.name}</h4>
+                        </Row>
+                        <Row>        
+                            <Col xs={6} md={2}>{servicetwo.extra.add1}</Col><Col xs={6} md={2}>{servicetwo.extra.price1}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add2}</Col><Col xs={6} md={2}>{servicetwo.extra.price2}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add3}</Col><Col xs={6} md={2}>{servicetwo.extra.price3}</Col>        
+                        </Row>
+                        <Row>        
+                            <Col xs={6} md={2}>{servicetwo.extra.add4}</Col><Col xs={6} md={2}>{servicetwo.extra.price4}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add10}</Col><Col xs={6} md={2}>{servicetwo.extra.price10}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add6}</Col><Col xs={6} md={2}>{servicetwo.extra.price6}</Col>        
+                        </Row>
+                        <Row>        
+                            <Col xs={6} md={2}>{servicetwo.extra.add5}</Col ><Col xs={6} md={2}>{servicetwo.extra.price5}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add8}</Col><Col xs={6} md={2}>{servicetwo.extra.price8_1}<br/>{servicetwo.extra.price8_2}</Col>
+                            <Col xs={6} md={2}>{servicetwo.extra.add9}</Col><Col xs={6} md={2}>{servicetwo.extra.price9_1}<br/>{servicetwo.extra.price9_2}</Col>        
+                        </Row>
+                        <Row>
+                            <Col xs={6} md={2}>{servicetwo.extra.add7}</Col><Col xs={6} md={2}>{servicetwo.extra.price7}</Col>
+                        </Row>  
                     </Container>
                 </Container>
                 <Container className="content-padding">
                     <Row id='thirdService' className="justify-content-center adjustment-padding" >
-                        <h1>{services.item3}</h1>
+                        <h1>{servicethree.title}</h1>
                     </Row>
                     <Row>
                         <Col xs={12} md={3} className="my-auto">
                             <PreviewCompatibleImage imageInfo={servicethree.image1} />
+                        </Col>
+                        <Col xs={12} md={9}>
                         </Col>
                     </Row>
                 </Container>
@@ -372,6 +408,7 @@ ServicePageTemplate.propTypes = {
         }),
     }),
     servicethree: PropTypes.shape({
+        title: PropTypes.string,
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
     servicefour: PropTypes.shape({
@@ -568,6 +605,7 @@ export const servicePageQuery = graphql`
                             }
                         }
                     }
+                    title
                 }
                 servicefour {
                     image1 {

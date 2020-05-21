@@ -11,8 +11,7 @@ html {
   }
   
   .themeColor{
-    background-image: radial-gradient( #E58AB7, #502E3E);
-    
+    background-image: radial-gradient( #E58AB7, #502E3E);    
   }
 
   .content-padding{
@@ -44,7 +43,7 @@ html {
     padding-right: 22px;
   }
 
-  .fontColor{
+  .fontColor, h2.fontColor{
     color: white;
   }
 
