@@ -224,86 +224,68 @@ export const ServicePageTemplate = ({
                         <Col xs={12} md={3} className="my-auto">
                             <PreviewCompatibleImage imageInfo={servicethree.image1} />
                         </Col>
-                        <Col xs={12} md={9}>
+                        <Col xs={12} md={5}>
+                            <Row style={{paddingTop: '15px'}}>
+                                <Col>
+                                    <h5>{servicethree.type1}</h5>
+                                    <p>{servicethree.text1}</p>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list1.item1}</Col><Col xs={6} md={5}>{servicethree.list1.price1}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list1.item2}</Col><Col xs={6} md={5}>{servicethree.list1.price2}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list1.item3}</Col><Col xs={6} md={5}>{servicethree.list1.price3}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list1.item4}</Col><Col xs={6} md={5}>{servicethree.list1.price4}</Col>
+                                    </Row>
+                                </Col>
+                            </Row>             
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <Row style={{paddingTop: '15px'}}>
+                                <Col>
+                                    <h5>{servicethree.type2}</h5>
+                                    <p>{servicethree.text2}</p>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list2.item1}</Col><Col xs={6} md={5}>{servicethree.list2.price1}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list2.item2}</Col><Col xs={6} md={5}>{servicethree.list2.price2}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list2.item3}</Col><Col xs={6} md={5}>{servicethree.list2.price3}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={6} md={5}>{servicethree.list2.item4}</Col><Col xs={6} md={5}>{servicethree.list2.price4}</Col>
+                                    </Row>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
-                </Container>
-                <Container fluid className="themeColor content-padding">
-                    <Container>
-                        <Row id='fourthService' className="justify-content-center adjustment-padding" >
-                            <h1>{services.item4}</h1>
-                        </Row>
-                        <Row>
-                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
-                                <PreviewCompatibleImage imageInfo={servicefour.image1} />
-                            </Col>
-                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                <h5>{serviceone.type1}</h5>
-                                <p>{serviceone.text1}</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Container>
-                <Container className="content-padding">
-                    <Row id='fifthService' className="justify-content-center adjustment-padding" >
-                        <h1>{services.item5}</h1>
+                    <br/>
+                    <Row className="justify-content-center">
+                        <h4>{servicethree.extra.name}</h4>
+                    </Row>
+                    <Row>        
+                        <Col xs={6} md={2}>{servicethree.extra.add1}</Col><Col xs={6} md={2}>{servicethree.extra.price1}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add2}</Col><Col xs={6} md={2}>{servicethree.extra.price2}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add3}</Col><Col xs={6} md={2}>{servicethree.extra.price3}</Col>        
+                    </Row>
+                    <Row>        
+                        <Col xs={6} md={2}>{servicethree.extra.add4}</Col><Col xs={6} md={2}>{servicethree.extra.price4}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add10}</Col><Col xs={6} md={2}>{servicethree.extra.price10}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add6}</Col><Col xs={6} md={2}>{servicethree.extra.price6}</Col>        
+                    </Row>
+                    <Row>        
+                        <Col xs={6} md={2}>{servicethree.extra.add5}</Col ><Col xs={6} md={2}>{servicethree.extra.price5}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add8}</Col><Col xs={6} md={2}>{servicethree.extra.price8_1}<br/>{servicetwo.extra.price8_2}</Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add9}</Col><Col xs={6} md={2}>{servicethree.extra.price9_1}<br/>{servicetwo.extra.price9_2}</Col>        
                     </Row>
                     <Row>
-                        <Col xs={12} md={3} className="my-auto">
-                            <PreviewCompatibleImage imageInfo={servicefive.image1} />
-                        </Col>
-                    </Row>
-                </Container >
-                <Container fluid className="themeColor content-padding">
-                    <Container>
-                    <Row id='sixthService' className="justify-content-center adjustment-padding" >
-                            <h1>{services.item6}</h1>
-                        </Row>
-                        <Row>
-                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}}>
-                                <PreviewCompatibleImage imageInfo={servicesix.image1} />
-                            </Col>
-                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                <h5>{serviceone.type1}</h5>
-                                <p>{serviceone.text1}</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Container>
-                <Container className="content-padding">
-                    <Row id='seventhService' className="justify-content-center adjustment-padding" >
-                        <h1>{services.item7}</h1>
-                    </Row>
-                    <Row>
-                        <Col xs={12} md={3} className="my-auto">
-                            <PreviewCompatibleImage imageInfo={serviceseven.image1} />
-                        </Col>
-                    </Row>
-                </Container>
-                <Container fluid className="themeColor content-padding">
-                    <Container>
-                        <Row id='eighthService' className="justify-content-center adjustment-padding" >
-                            <h1>{services.item8}</h1>
-                        </Row>
-                        <Row>
-                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
-                                <PreviewCompatibleImage imageInfo={serviceeight.image1} />
-                            </Col>
-                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                <h5>{serviceone.type1}</h5>
-                                <p>{serviceone.text1}</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Container>
-                <Container className="content-padding">
-                    <Row id='ninthService' className="justify-content-center adjustment-padding" >
-                        <h1>{services.item9}</h1>
-                    </Row>
-                    <Row>
-                        <Col xs={12} md={3} className="my-auto">
-                            <PreviewCompatibleImage imageInfo={servicenine.image1} />
-                        </Col>
+                        <Col xs={6} md={2}>{servicethree.extra.add7}</Col><Col xs={6} md={2}>{servicethree.extra.price7}</Col>
                     </Row>
                 </Container>
             </div>
@@ -410,24 +392,55 @@ ServicePageTemplate.propTypes = {
     servicethree: PropTypes.shape({
         title: PropTypes.string,
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    servicefour: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    servicefive: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    servicesix: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    serviceseven: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    serviceeight: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    }),
-    servicenine: PropTypes.shape({
-        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        type: PropTypes.string,
+        text1: PropTypes.string,
+        list1: PropTypes.shape({
+            item1: PropTypes.string,
+            price1: PropTypes.string,
+            item2: PropTypes.string,
+            price2: PropTypes.string,
+            item3: PropTypes.string,
+            price3: PropTypes.string,
+            item4: PropTypes.string,
+            price4: PropTypes.string,
+        }),
+        type2: PropTypes.string,
+        text2: PropTypes.string,
+        list2: PropTypes.shape({
+            item1: PropTypes.string,
+            price1: PropTypes.string,
+            item2: PropTypes.string,
+            price2: PropTypes.string,
+            item3: PropTypes.string,
+            price3: PropTypes.string,
+            item4: PropTypes.string,
+            price4: PropTypes.string,
+        }),
+        extra: PropTypes.shape({
+            name: PropTypes.string,
+            add1: PropTypes.string,
+            price1: PropTypes.string,
+            add2: PropTypes.string,
+            price2: PropTypes.string,
+            add3: PropTypes.string,
+            price3: PropTypes.string,
+            add4: PropTypes.string,
+            price4: PropTypes.string,
+            add5: PropTypes.string,
+            price5: PropTypes.string,
+            add6: PropTypes.string,
+            price6: PropTypes.string,
+            add7: PropTypes.string,
+            price7: PropTypes.string,
+            add8: PropTypes.string,
+            price8_1: PropTypes.string,
+            price8_2: PropTypes.string,
+            add9: PropTypes.string,
+            price9_1: PropTypes.string,
+            price9_2: PropTypes.string,
+            add10: PropTypes.string,
+            price10: PropTypes.string,
+        }),
     }),
 }
 
@@ -606,77 +619,54 @@ export const servicePageQuery = graphql`
                         }
                     }
                     title
-                }
-                servicefour {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
+                    type1
+                    text1
+                    list1 {
+                        item1
+                        price1
+                        item2
+                        price2
+                        item3
+                        price3
+                        item4
+                        price4
                     }
-                }
-                servicefive {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
+                    type2
+                    text2
+                    list2 {
+                        item1
+                        price1
+                        item2
+                        price2
+                        item3
+                        price3
+                        item4
+                        price4
                     }
-                }
-                servicesix {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                }
-                serviceseven {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                }
-                serviceeight {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                }
-                servicenine {
-                    image1 {
-                        alt
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 2048, quality: 100) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
+                    extra {
+                        name
+                        add1
+                        price1
+                        add2
+                        price2
+                        add3
+                        price3
+                        add4
+                        price4
+                        add5
+                        price5
+                        add6
+                        price6
+                        add7
+                        price7
+                        add8
+                        price8_1
+                        price8_2
+                        add9
+                        price9_1
+                        price9_2
+                        add10
+                        price10
                     }
                 }
             }
