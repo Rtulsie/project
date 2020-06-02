@@ -155,4 +155,66 @@ servicethree:
     price9_2: $50.00 entire Hands
     add10: Gel Top Coat
     price10: $35.00
+servicefour:
+  title: Nail Enhancements
+  image1:
+    alt: Waxing picture
+    image: /img/pedicure.jpeg
+  list1:
+    item1: Nail tips
+    price1: $150.00
+    item2: Acrylic on natural nail
+    price2: $250.00
+    item3: Acrylic fullset (short to med)
+    price3: $280.00 (square)
+    item4: Acrylic fullset (med to long)
+    price4: $300.00 (coffin, stiletto)
+    item5: Sculpted nails
+    price5: $300.00
+    item6: Colour acrylic nails
+    price6: $320.00
+    item7: French acrylic nails
+    price7: $320.00
+    item8: V-Shaped French
+    price8: $350.00
+    item9: Ombre acrylic nails
+    price9: $320.00
+    item10: Tri-colour Acrylic
+    price10: $350.00
+    item11: Gel overlay on natural nails
+    price11: $300.00
+    item12: Gel overlay extensions
+    price12: $350.00
+    item13: Ombre/French gel builder
+    price13: $400.00
+    item14: Polygel set extensions
+    price14: $350.00
+    item15: Polygel on natural
+    price15: $300.00 (short or med)
+    item16: Acrylic/gel builder on big toes
+    price16: $40.00 each
+    item17: Acrylic on toes
+    price17: $200.00
+    item18: Gel builder on toes
+    price18: $200.00
+  text: >
+    See Extras/Additions for Accent nails
+  type: Maintenance
+  list2:
+    item1: Gel polish removal
+    price1: $50.00
+    item2: Acrylic soak off
+    price2: $75.00
+    item3: Acrylic fill
+    price3: $250.00
+    item4: Acrylic fill on toes
+    price4: $180.00
+    item5: Gel fill
+    price5: $250.00
+    item6: Polygel fill
+    price6: $250.00
+    item7: Acrylic/gel repairs
+    price7: $40.00 per nail
+    item8: Acrylic refill on big toe
+    price8: $20.00 per nail
 ---
