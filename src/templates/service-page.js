@@ -298,7 +298,38 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={servicefour.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                
+                                <Row>        
+                                    <Col xs={3} md={3}>{servicefour.list1.item1}</Col><Col xs={6} md={2}>{servicefour.list1.price1}</Col>
+                                    <Col xs={5} md={2}>{servicefour.list1.item2}</Col><Col xs={6} md={2}>{servicefour.list1.price2}</Col>  
+                                </Row>
+                                <Row>
+                                    <Col xs={6} md={2}>{servicefour.list1.item3}</Col><Col xs={6} md={1}>{servicefour.list1.price3}</Col> 
+                                    <Col xs={6} md={2}>{servicefour.list1.item4}</Col><Col xs={6} md={2}>{servicefour.list1.price4}</Col> 
+                                </Row>
+                                <Row>        
+                                    <Col xs={6} md={2}>{servicefour.list1.item5}</Col><Col xs={6} md={2}>{servicefour.list1.price5}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item6}</Col><Col xs={6} md={2}>{servicefour.list1.price6}</Col>         
+                                </Row>
+                                <Row>        
+                                    <Col xs={6} md={2}>{servicefour.list1.item7}</Col><Col xs={6} md={2}>{servicefour.list1.price7}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item8}</Col><Col xs={6} md={2}>{servicefour.list1.price8}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item9}</Col><Col xs={6} md={2}>{servicefour.list1.price9}</Col>         
+                                </Row>
+                                <Row>        
+                                    <Col xs={6} md={2}>{servicefour.list1.item10}</Col><Col xs={6} md={2}>{servicefour.list1.price10}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item11}</Col><Col xs={6} md={2}>{servicefour.list1.price11}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item12}</Col><Col xs={6} md={2}>{servicefour.list1.price12}</Col>         
+                                </Row>
+                                <Row>        
+                                    <Col xs={6} md={2}>{servicefour.list1.item13}</Col><Col xs={6} md={2}>{servicefour.list1.price13}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item14}</Col><Col xs={6} md={2}>{servicefour.list1.price14}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item15}</Col><Col xs={6} md={2}>{servicefour.list1.price15}</Col>         
+                                </Row>
+                                <Row>        
+                                    <Col xs={6} md={2}>{servicefour.list1.item16}</Col><Col xs={6} md={2}>{servicefour.list1.price16}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item17}</Col><Col xs={6} md={2}>{servicefour.list1.price17}</Col>
+                                    <Col xs={6} md={2}>{servicefour.list1.item18}</Col><Col xs={6} md={2}>{servicefour.list1.price18}</Col>         
+                                </Row>
                             </Col>
                         </Row>
                     </Container>
