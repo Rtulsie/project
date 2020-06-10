@@ -20,6 +20,8 @@ export const ServicePageTemplate = ({
     serviceseven,
     serviceeight,
     servicenine,
+    serviceten,
+    serviceeleven,
 }) => (
     <div className="content">
         <div
@@ -77,8 +79,8 @@ export const ServicePageTemplate = ({
                         <Col xs={6} md="auto"><a href="#seventhService">{services.item7}</a></Col>
                         <Col xs={6} md="auto"><a href="#eighthService">{services.item8}</a></Col>
                         <Col xs={6} md="auto"><a href="#ninthService">{services.item9}</a></Col>
-                        <Col xs={6} md="auto"><a href="#ninthService">{services.item10}</a></Col>
-                        <Col xs={12} md="auto"><a href="#ninthService">{services.item11}</a></Col>
+                        <Col xs={6} md="auto"><a href="#tenthService">{services.item10}</a></Col>
+                        <Col xs={12} md="auto"><a href="#eleventhService">{services.item11}</a></Col>
                     </Row>
                 </Container>
                 <Container className="content-padding">
@@ -300,7 +302,7 @@ export const ServicePageTemplate = ({
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
                                 <Row>        
                                     <Col xs={3} md={3}>{servicefour.list1.item1}</Col><Col xs={6} md={2}>{servicefour.list1.price1}</Col>
-                                    <Col xs={5} md={2}>{servicefour.list1.item2}</Col><Col xs={6} md={2}>{servicefour.list1.price2}</Col>  
+                                    <Col xs={5} md={2 }>{servicefour.list1.item2}</Col><Col xs={6} md={2}>{servicefour.list1.price2}</Col>  
                                 </Row>
                                 <Row>
                                     <Col xs={6} md={2}>{servicefour.list1.item3}</Col><Col xs={6} md={1}>{servicefour.list1.price3}</Col> 
@@ -333,6 +335,103 @@ export const ServicePageTemplate = ({
                             </Col>
                         </Row>
                     </Container>
+                </Container>
+                <Container className="content-padding">
+                    <Row id='fifthService' className="justify-content-center adjustment-padding" >
+                        <h1>{servicefive.title}</h1>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={3} className="my-auto">
+                            <PreviewCompatibleImage imageInfo={servicefive.image1} />
+                        </Col>
+                        <Col xs={12} md={5}>
+                          Contents
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid className="themeColor content-padding fontColor">
+                    <Container>
+                        <Row id='sixthService' className="justify-content-center adjustment-padding" >
+                            <h1>{servicesix.title}</h1>
+                        </Row>
+                        <Row>
+                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
+                                <PreviewCompatibleImage imageInfo={servicesix.image1} />
+                            </Col>
+                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
+                               Content
+                            </Col>
+                        </Row>
+                    </Container>
+                </Container>
+                <Container className="content-padding">
+                    <Row id='seventhService' className="justify-content-center adjustment-padding" >
+                        <h1>{serviceseven.title}</h1>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={3} className="my-auto">
+                            <PreviewCompatibleImage imageInfo={serviceseven.image1} />
+                        </Col>
+                        <Col xs={12} md={5}>
+                          Contents
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid className="themeColor content-padding fontColor">
+                    <Container>
+                        <Row id='eighthService' className="justify-content-center adjustment-padding" >
+                            <h1>{serviceeight.title}</h1>
+                        </Row>
+                        <Row>
+                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
+                                <PreviewCompatibleImage imageInfo={serviceeight.image1} />
+                            </Col>
+                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
+                               Content
+                            </Col>
+                        </Row>
+                    </Container>
+                </Container>
+                <Container className="content-padding">
+                    <Row id='ninethService' className="justify-content-center adjustment-padding" >
+                        <h1>{servicenine.title}</h1>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={3} className="my-auto">
+                            <PreviewCompatibleImage imageInfo={servicenine.image1} />
+                        </Col>
+                        <Col xs={12} md={5}>
+                          Contents
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid className="themeColor content-padding fontColor">
+                    <Container>
+                        <Row id='tenthService' className="justify-content-center adjustment-padding" >
+                            <h1>{serviceten.title}</h1>
+                        </Row>
+                        <Row>
+                            <Col xs={{span: 12, order: 1}} md={{span: 3, order: 12}} className="my-auto">
+                                <PreviewCompatibleImage imageInfo={serviceten.image1} />
+                            </Col>
+                            <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
+                               Content
+                            </Col>
+                        </Row>
+                    </Container>
+                </Container>
+                <Container className="content-padding">
+                    <Row id='eleventhService' className="justify-content-center adjustment-padding" >
+                        <h1>{serviceeleven.title}</h1>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={3} className="my-auto">
+                            <PreviewCompatibleImage imageInfo={serviceeleven.image1} />
+                        </Col>
+                        <Col xs={12} md={5}>
+                          Contents
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         </div>
@@ -549,6 +648,226 @@ ServicePageTemplate.propTypes = {
                 price8: PropTypes.string,
             }),
         }),
+        servicefive: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            list: PropTypes.shape({
+                item1: PropTypes.string,
+                price1: PropTypes.string,
+                item2: PropTypes.string,
+                price2: PropTypes.string,
+                item3: PropTypes.string,
+                price3: PropTypes.string,
+                item4: PropTypes.string,
+                price4: PropTypes.string,
+                item5: PropTypes.string,
+                price5: PropTypes.string,
+                item6: PropTypes.string,
+                price6: PropTypes.string,
+                item7: PropTypes.string,
+                price7: PropTypes.string,
+                item8: PropTypes.string,
+                price8: PropTypes.string,
+                item9: PropTypes.string,
+                price9: PropTypes.string,
+                item10: PropTypes.string,
+                price10: PropTypes.string,
+                item11: PropTypes.string,
+                price11: PropTypes.string,
+                item12: PropTypes.string,
+                price12: PropTypes.string,
+                item13: PropTypes.string,
+                price13: PropTypes.string,
+                item14: PropTypes.string,
+                price14: PropTypes.string,
+                item15: PropTypes.string,
+                price15: PropTypes.string,
+                item16: PropTypes.string,
+                price16: PropTypes.string,
+                item17: PropTypes.string,
+                price17: PropTypes.string,
+                item18: PropTypes.string,
+                price18: PropTypes.string,
+                item19: PropTypes.string,
+                price19: PropTypes.string,
+                item20: PropTypes.string,
+                price20: PropTypes.string,
+                item21: PropTypes.string,
+                price21: PropTypes.string,
+                item22: PropTypes.string,
+                price22: PropTypes.string,
+                item23: PropTypes.string,
+                price23: PropTypes.string,
+            }),
+        }),
+        servicesix: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            list: PropTypes.shape({
+                item1: PropTypes.string,
+                price1: PropTypes.string,
+                item2: PropTypes.string,
+                price2: PropTypes.string,
+            }),
+        }),
+        serviceseven: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            type1: PropTypes.string,
+            list1: PropTypes.shape({
+                item1: PropTypes.string,
+                pricef1: PropTypes.string,
+                pricem1: PropTypes.string,
+                item2: PropTypes.string,
+                pricef2: PropTypes.string,
+                pricem2: PropTypes.string,
+                item3: PropTypes.string,
+                pricef3: PropTypes.string,
+                pricem3: PropTypes.string,
+                item4: PropTypes.string,
+                pricef4: PropTypes.string,
+                pricem4: PropTypes.string,
+                item5: PropTypes.string,
+                pricef5: PropTypes.string,
+                pricem5: PropTypes.string,
+            }),
+            type2: PropTypes.string,
+            list2: PropTypes.shape({
+                item1: PropTypes.string,
+                pricef1: PropTypes.string,
+                pricem1: PropTypes.string,
+                item2: PropTypes.string,
+                pricef2: PropTypes.string,
+                pricem2: PropTypes.string,
+                item3: PropTypes.string,
+                price3: PropTypes.string,
+                item4: PropTypes.string,
+                price4: PropTypes.string,
+                item5: PropTypes.string,
+                price5: PropTypes.string,
+            }),
+        }),
+        serviceeight: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            type1: PropTypes.string,
+            text1: PropTypes.string,
+            price1: PropTypes.string,
+            type2: PropTypes.string,
+            text2: PropTypes.string,
+            price2: PropTypes.string,
+            type3: PropTypes.string,
+            text3: PropTypes.string,
+            price3: PropTypes.string,
+        }),
+        servicenine: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            list: PropTypes.shape({
+                item1: PropTypes.string,
+                price1: PropTypes.string,
+                item2: PropTypes.string,
+                price2: PropTypes.string,
+                item2_1: PropTypes.string,
+                price2_1: PropTypes.string,
+                item2_2: PropTypes.string,
+                price2_2: PropTypes.string,
+                item3: PropTypes.string,
+                price3: PropTypes.string,
+                item4: PropTypes.string,
+                price4: PropTypes.string,
+                item5: PropTypes.string,
+                price5: PropTypes.string,
+                item6: PropTypes.string,
+                price6: PropTypes.string,
+                item7: PropTypes.string,
+                price7: PropTypes.string,
+                item8: PropTypes.string,
+                price8: PropTypes.string,
+                item9: PropTypes.string,
+                price9_1: PropTypes.string,
+                price9_2: PropTypes.string,
+                price9_3: PropTypes.string,
+                item10: PropTypes.string,
+                price10: PropTypes.string,
+                item11: PropTypes.string,
+                text11: PropTypes.string,
+                price11: PropTypes.string,
+                item12: PropTypes.string,
+                price12: PropTypes.string,
+            }),
+            text: PropTypes.string,
+        }),
+        serviceten: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            description: PropTypes.string,
+            type1: PropTypes.string,
+            text1: PropTypes.string,
+            price1: PropTypes.string,
+            type2: PropTypes.string,
+            text2: PropTypes.string,
+            price2: PropTypes.string,
+            type3: PropTypes.string,
+            text3: PropTypes.string,
+            price3: PropTypes.string,
+            type4: PropTypes.string,
+            text4: PropTypes.string,
+            text4_1: PropTypes.string,
+            text4_2: PropTypes.string,
+            price4: PropTypes.string,
+            type5: PropTypes.string,
+            text5_1: PropTypes.string,
+            text5_2: PropTypes.string,
+            text5_3: PropTypes.string,
+            price5: PropTypes.string,
+        }),
+        serviceeleven: PropTypes.shape({
+            title: PropTypes.string,
+            image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            type1: PropTypes.string,
+            list1: PropTypes.shape({
+                item1: PropTypes.string,
+                price1: PropTypes.string,
+                item2: PropTypes.string,
+                price2: PropTypes.string,
+                item3: PropTypes.string,
+                price3: PropTypes.string,
+                item4: PropTypes.string,
+                price4: PropTypes.string,
+                item5: PropTypes.string,
+                price5: PropTypes.string,
+                item6: PropTypes.string,
+                price6: PropTypes.string,
+                item7: PropTypes.string,
+                price7: PropTypes.string,
+                item8: PropTypes.string,
+                price8: PropTypes.string,
+                item9: PropTypes.string,
+                price9: PropTypes.string,
+                item10: PropTypes.string,
+                price10: PropTypes.string,
+                item11: PropTypes.string,
+                price11: PropTypes.string,
+                item12: PropTypes.string,
+                price12: PropTypes.string,
+                item13: PropTypes.string,
+                price13: PropTypes.string,
+            }),
+            type2: PropTypes.string,
+            list2: PropTypes.shape({
+                item1: PropTypes.string,
+                price1: PropTypes.string,
+                item2: PropTypes.string,
+                price2: PropTypes.string,
+                item3: PropTypes.string,
+                price3: PropTypes.string,
+                item4: PropTypes.string,
+                price4: PropTypes.string,
+                item5: PropTypes.string,
+                price5: PropTypes.string,
+            }),
+        }),
     }),
 }
 
@@ -572,6 +891,8 @@ const ServicePage = ({data}) => {
                 serviceseven={frontmatter.serviceseven}
                 serviceeight={frontmatter.serviceeight}
                 servicenine={frontmatter.servicenine}
+                serviceten={frontmatter.serviceten}
+                serviceeleven={frontmatter.serviceeleven}
             />
         </Layout>
     )
@@ -846,6 +1167,285 @@ export const servicePageQuery = graphql`
                         price7
                         item8
                         price8
+                    }
+                }
+                servicefive {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    list {
+                        item1
+                        price1
+                        item2
+                        price2
+                        item3
+                        price3
+                        item4
+                        price4
+                        item5
+                        price5
+                        item6
+                        price6
+                        item7
+                        price7
+                        item8
+                        price8
+                        item9
+                        price9
+                        item10
+                        price10
+                        item11
+                        price11
+                        item12
+                        price12
+                        item13
+                        price13
+                        item14
+                        price14
+                        item15
+                        price15
+                        item16
+                        price16
+                        item17
+                        price17
+                        item18
+                        price18
+                        item19
+                        price19
+                        item20
+                        price20
+                        item21
+                        price21
+                        item22
+                        price22
+                        item23
+                        price23
+                    }
+                }
+                servicesix {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    list {
+                        item1
+                        price1
+                        item2
+                        price2
+                    }
+                }
+                serviceseven {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    type1
+                    list1{
+                        item1
+                        pricef1
+                        pricem1
+                        item2
+                        pricef2
+                        pricem2
+                        item3
+                        pricef3
+                        pricem3
+                        item4
+                        pricef4
+                        pricem4
+                        item5
+                        pricef5
+                        pricem5
+                    }
+                    type2
+                    list2{
+                        item1
+                        pricef1
+                        pricem1
+                        item2
+                        pricef2
+                        pricem2
+                        item3
+                        price3
+                        item4
+                        price4
+                        item5
+                        price5
+                    }
+                }
+                serviceeight {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    type1
+                    text1
+                    price1
+                    type2
+                    text2
+                    price2
+                    type3
+                    text3
+                    price3
+                }
+                servicenine {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    list {
+                        item1
+                        price1
+                        item2
+                        price2
+                        item2_1
+                        price2_1
+                        item2_2
+                        price2_2
+                        item3
+                        price3
+                        item4
+                        price4
+                        item5
+                        price5
+                        item6
+                        price6
+                        item7
+                        price7
+                        item8
+                        price8
+                        item9
+                        price9_1
+                        price9_2
+                        price9_3
+                        item10
+                        price10
+                        item11
+                        text11
+                        price11
+                        item12
+                    }
+                    text
+                }
+                serviceten {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    description
+                    type1
+                    text1
+                    price1
+                    type2
+                    text2
+                    price2
+                    type3
+                    text3
+                    price3
+                    type4
+                    text4_1
+                    text4_2
+                    price4
+                    type5
+                    price5
+                    text5_1
+                    text5_2
+                    text5_3
+                }
+                serviceeleven {
+                    image1 {
+                        alt
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 2048, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    title
+                    list1{
+                        item1
+                        price1
+                        item2
+                        price2
+                        item3
+                        price3
+                        item4
+                        price4
+                        item5
+                        price5
+                        item6
+                        price6
+                        item7
+                        price7
+                        item8
+                        price8
+                        item9
+                        price9
+                        item10
+                        price10
+                        item11
+                        price11
+                        item12
+                        price12
+                        item13
+                        price13
+                    }
+                    type2
+                    list2{
+                        item1
+                        price1
+                        item2
+                        price2
+                        item3
+                        price3
+                        item4
+                        price4
+                        item5
+                        price5
                     }
                 }
             }
