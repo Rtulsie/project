@@ -300,37 +300,59 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={servicefour.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
-                                <Row>        
-                                    <Col xs={3} md={3}>{servicefour.list1.item1}</Col><Col xs={6} md={2}>{servicefour.list1.price1}</Col>
-                                    <Col xs={5} md={2 }>{servicefour.list1.item2}</Col><Col xs={6} md={2}>{servicefour.list1.price2}</Col>  
+                                <Row>
+                                    <Col>{servicefour.list1.item1}</Col><Col>{servicefour.list1.price1}</Col>
+                                    <Col>{servicefour.list1.item2}</Col><Col>{servicefour.list1.price2}</Col>
                                 </Row>
                                 <Row>
-                                    <Col xs={6} md={2}>{servicefour.list1.item3}</Col><Col xs={6} md={1}>{servicefour.list1.price3}</Col> 
-                                    <Col xs={6} md={2}>{servicefour.list1.item4}</Col><Col xs={6} md={2}>{servicefour.list1.price4}</Col> 
+                                    <Col>{servicefour.list1.item5}</Col><Col>{servicefour.list1.price5}</Col>
+                                    <Col>{servicefour.list1.item6}</Col><Col>{servicefour.list1.price6}</Col>
                                 </Row>
-                                <Row>        
-                                    <Col xs={6} md={2}>{servicefour.list1.item5}</Col><Col xs={6} md={2}>{servicefour.list1.price5}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item6}</Col><Col xs={6} md={2}>{servicefour.list1.price6}</Col>         
+                                <Row>
+                                    <Col>{servicefour.list1.item7}</Col><Col>{servicefour.list1.price7}</Col>
+                                    <Col>{servicefour.list1.item8}</Col><Col>{servicefour.list1.price8}</Col>
                                 </Row>
-                                <Row>        
-                                    <Col xs={6} md={2}>{servicefour.list1.item7}</Col><Col xs={6} md={2}>{servicefour.list1.price7}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item8}</Col><Col xs={6} md={2}>{servicefour.list1.price8}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item9}</Col><Col xs={6} md={2}>{servicefour.list1.price9}</Col>         
+                                <Row>
+                                    <Col>{servicefour.list1.item9}</Col><Col>{servicefour.list1.price9}</Col>
+                                    <Col>{servicefour.list1.item10}</Col><Col>{servicefour.list1.price10}</Col>
                                 </Row>
-                                <Row>        
-                                    <Col xs={6} md={2}>{servicefour.list1.item10}</Col><Col xs={6} md={2}>{servicefour.list1.price10}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item11}</Col><Col xs={6} md={2}>{servicefour.list1.price11}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item12}</Col><Col xs={6} md={2}>{servicefour.list1.price12}</Col>         
+                                <Row>
+                                    <Col>{servicefour.list1.item12}</Col><Col>{servicefour.list1.price12}</Col>
+                                    <Col>{servicefour.list1.item13}</Col><Col>{servicefour.list1.price13}</Col>
                                 </Row>
-                                <Row>        
-                                    <Col xs={6} md={2}>{servicefour.list1.item13}</Col><Col xs={6} md={2}>{servicefour.list1.price13}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item14}</Col><Col xs={6} md={2}>{servicefour.list1.price14}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item15}</Col><Col xs={6} md={2}>{servicefour.list1.price15}</Col>         
+                                <Row>
+                                    <Col>{servicefour.list1.item14}</Col><Col>{servicefour.list1.price14}</Col>
+                                    <Col>{servicefour.list1.item15}</Col><Col>{servicefour.list1.price15}</Col>
                                 </Row>
-                                <Row>        
-                                    <Col xs={6} md={2}>{servicefour.list1.item16}</Col><Col xs={6} md={2}>{servicefour.list1.price16}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item17}</Col><Col xs={6} md={2}>{servicefour.list1.price17}</Col>
-                                    <Col xs={6} md={2}>{servicefour.list1.item18}</Col><Col xs={6} md={2}>{servicefour.list1.price18}</Col>         
+                                <Row>
+                                    <Col>{servicefour.list1.item17}</Col><Col>{servicefour.list1.price17}</Col>
+                                    <Col>{servicefour.list1.item18}</Col><Col>{servicefour.list1.price18}</Col>                                    
+                                </Row>
+                                <Row>
+                                    <Col>{servicefour.list1.item11}</Col><Col>{servicefour.list1.price11}</Col>
+                                    <Col>{servicefour.list1.item16}</Col><Col>{servicefour.list1.price16}</Col>
+                                </Row>
+                                <Row>
+                                    <Col>{servicefour.list1.item3}</Col><Col>{servicefour.list1.price3}</Col>
+                                    <Col>{servicefour.list1.item4}</Col><Col>{servicefour.list1.price4}</Col>
+                                </Row>
+                                <p>*{servicefour.text}</p>
+                                <h5>{servicefour.type}</h5>
+                                <Row>
+                                    <Col>{servicefour.list2.item1}</Col><Col>{servicefour.list2.price1}</Col>
+                                    <Col>{servicefour.list2.item2}</Col><Col>{servicefour.list2.price2}</Col>
+                                </Row>
+                                <Row>
+                                    <Col>{servicefour.list2.item3}</Col><Col>{servicefour.list2.price3}</Col>
+                                    <Col>{servicefour.list2.item4}</Col><Col>{servicefour.list2.price4}</Col>
+                                </Row>
+                                <Row>
+                                    <Col>{servicefour.list2.item5}</Col><Col>{servicefour.list2.price5}</Col>
+                                    <Col>{servicefour.list2.item6}</Col><Col>{servicefour.list2.price6}</Col>
+                                </Row>
+                                <Row>
+                                    <Col>{servicefour.list2.item7}</Col><Col>{servicefour.list2.price7}</Col>
+                                    <Col>{servicefour.list2.item8}</Col><Col>{servicefour.list2.price8}</Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -344,8 +366,55 @@ export const ServicePageTemplate = ({
                         <Col xs={12} md={3} className="my-auto">
                             <PreviewCompatibleImage imageInfo={servicefive.image1} />
                         </Col>
-                        <Col xs={12} md={5}>
-                          Contents
+                        <Col xs={12} md={9}>
+                            <Row>
+                                <Col>{servicefive.list.item1}</Col><Col>{servicefive.list.price1}</Col>
+                                <Col>{servicefive.list.item2}</Col><Col>{servicefive.list.price2}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item3}</Col><Col>{servicefive.list.price3}</Col>
+                                <Col>{servicefive.list.item4}</Col><Col>{servicefive.list.price4}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item5}</Col><Col>{servicefive.list.price5}</Col>
+                                <Col>{servicefive.list.item6}</Col><Col>{servicefive.list.price6}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item7}</Col><Col>{servicefive.list.price7}</Col>
+                                <Col>{servicefive.list.item8}</Col><Col>{servicefive.list.price8}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item9}</Col><Col>{servicefive.list.price9}</Col>
+                                <Col>{servicefive.list.item10}</Col><Col>{servicefive.list.price10}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item11}</Col><Col>{servicefive.list.price11}</Col>
+                                <Col>{servicefive.list.item12}</Col><Col>{servicefive.list.price12}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item13}</Col><Col>{servicefive.list.price13}</Col>
+                                <Col>{servicefive.list.item14}</Col><Col>{servicefive.list.price14}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item15}</Col><Col>{servicefive.list.price15}</Col>
+                                <Col>{servicefive.list.item17}</Col><Col>{servicefive.list.price17}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item18}</Col><Col>{servicefive.list.price18}</Col>
+                                <Col>{servicefive.list.item20}</Col><Col>{servicefive.list.price20}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item21}</Col><Col>{servicefive.list.price21}</Col>
+                                <Col>{servicefive.list.item22}</Col><Col>{servicefive.list.price22}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item16}</Col><Col>{servicefive.list.price16}</Col>
+                                <Col>{servicefive.list.item19}</Col><Col>{servicefive.list.price19}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicefive.list.item23}</Col><Col>{servicefive.list.price23}</Col>
+                                <Col></Col><Col></Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
@@ -359,7 +428,12 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={servicesix.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
-                               Content
+                                <Row>
+                                    <Col>{servicesix.list.item1}</Col><Col>{servicesix.list.price1}</Col>
+                                </Row>
+                                <Row>
+                                    <Col>{servicesix.list.item2}</Col><Col>{servicesix.list.price2}</Col>
+                                </Row>
                             </Col>
                         </Row>
                     </Container>
@@ -372,8 +446,39 @@ export const ServicePageTemplate = ({
                         <Col xs={12} md={3} className="my-auto">
                             <PreviewCompatibleImage imageInfo={serviceseven.image1} />
                         </Col>
-                        <Col xs={12} md={5}>
-                          Contents
+                        <Col xs={12} md={9}>
+                            <h4>{serviceseven.type1}</h4>
+                            <Row>
+                                <Col>{serviceseven.list1.item1}</Col><Col>Female: {serviceseven.list1.pricef1}</Col><Col>Male: {serviceseven.list1.pricem1}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list1.item2}</Col><Col>Female: {serviceseven.list1.pricef2}</Col><Col>Male: {serviceseven.list1.pricem2}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list1.item3}</Col><Col>Female: {serviceseven.list1.pricef3}</Col><Col>Male: {serviceseven.list1.pricem3}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list1.item4}</Col><Col>Female: {serviceseven.list1.pricef4}</Col><Col>Male: {serviceseven.list1.pricem4}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list1.item5}</Col><Col>Female: {serviceseven.list1.pricef5}</Col><Col>Male: {serviceseven.list1.pricem5}</Col>
+                            </Row>
+                            <h4>{serviceseven.type2}</h4>
+                            <Row>
+                                <Col>{serviceseven.list2.item1}</Col><Col>Female: {serviceseven.list2.pricef1}</Col><Col>Male: {serviceseven.list2.pricem1}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list2.item2}</Col><Col>Female: {serviceseven.list2.pricef2}</Col><Col>Male: {serviceseven.list2.pricem2}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list2.item3}</Col><Col>{serviceseven.list2.price3}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list2.item4}</Col><Col>{serviceseven.list2.price4}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{serviceseven.list2.item5}</Col><Col>{serviceseven.list2.price5}</Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
@@ -387,7 +492,18 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={serviceeight.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
-                               Content
+                                <Row>
+                                    <Col>{serviceeight.type1}-{serviceeight.price1}</Col>
+                                </Row>
+                                <p>{serviceeight.text1}</p>
+                                <Row>
+                                    <Col>{serviceeight.type2}-{serviceeight.price2}</Col>
+                                </Row>
+                                <p>{serviceeight.text2}</p>
+                                <Row>
+                                    <Col>{serviceeight.type3}-{serviceeight.price3}</Col>
+                                </Row>
+                                <p>{serviceeight.text3}</p>
                             </Col>
                         </Row>
                     </Container>
@@ -400,8 +516,51 @@ export const ServicePageTemplate = ({
                         <Col xs={12} md={3} className="my-auto">
                             <PreviewCompatibleImage imageInfo={servicenine.image1} />
                         </Col>
-                        <Col xs={12} md={5}>
-                          Contents
+                        <Col xs={12} md={9}>
+                            <Row>
+                                <Col>{servicenine.list.item1}</Col><Col>{servicenine.list.price1}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item2}</Col><Col>{servicenine.list.price2}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item2_1}</Col><Col>{servicenine.list.price2_1}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item2_2}</Col><Col>{servicenine.list.price2_2}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item3}</Col><Col>{servicenine.list.price3}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item4}</Col><Col>{servicenine.list.price4}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item5}</Col><Col>{servicenine.list.price5}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item6}</Col><Col>{servicenine.list.price6}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item7}</Col><Col>{servicenine.list.price7}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item8}</Col><Col>{servicenine.list.price8}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item9}</Col><Col>{servicenine.list.price9_1}</Col><Col>{servicenine.list.price9_2}</Col><Col>{servicenine.list.price9_3}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item10}</Col><Col>{servicenine.list.price10}</Col>
+                            </Row>
+                            <Row>
+                                <Col>{servicenine.list.item11}</Col><Col>{servicenine.list.price11}</Col>
+                            </Row>
+                            <p>{servicenine.list.text11}</p>
+                            <Row>
+                                <Col>{servicenine.list.item12}</Col><Col>{servicenine.list.price12}</Col>
+                            </Row>
+                            <p>{servicenine.text}</p>
                         </Col>
                     </Row>
                 </Container>
@@ -415,7 +574,30 @@ export const ServicePageTemplate = ({
                                 <PreviewCompatibleImage imageInfo={serviceten.image1} />
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}> 
-                               Content
+                                <h3>{serviceten.description}</h3>
+                                <Row>
+                                    <Col>{serviceten.type1}</Col><Col>{serviceten.price1}</Col>
+                                </Row>
+                                <p>{serviceten.text1}</p>
+                                <Row>
+                                    <Col>{serviceten.type2}</Col><Col>{serviceten.price2}</Col>
+                                </Row>
+                                <p>{serviceten.text2}</p>
+                                <Row>
+                                    <Col>{serviceten.type3}</Col><Col>{serviceten.price3}</Col>
+                                </Row>
+                                <p>{serviceten.text3}</p>
+                                <Row>
+                                    <Col>{serviceten.type4}</Col><Col>{serviceten.price4}</Col>
+                                </Row>
+                                <p>{serviceten.text4_1}</p>
+                                <p>{serviceten.text4_2}</p>
+                                <Row>
+                                    <Col>{serviceten.type5}</Col><Col>{serviceten.price5}</Col>
+                                </Row>
+                                <p>{serviceten.text5_1}
+                                <br/>{serviceten.text5_2}
+                                <br/>{serviceten.text5_3}</p>
                             </Col>
                         </Row>
                     </Container>
@@ -429,7 +611,72 @@ export const ServicePageTemplate = ({
                             <PreviewCompatibleImage imageInfo={serviceeleven.image1} />
                         </Col>
                         <Col xs={12} md={5}>
-                          Contents
+                            <Row>
+                                <Col>
+                                    <h4>{serviceeleven.type1}</h4>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item1}</Col><Col>{serviceeleven.list1.price1}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item2}</Col><Col>{serviceeleven.list1.price2}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item3}</Col><Col>{serviceeleven.list1.price3}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item4}</Col><Col>{serviceeleven.list1.price4}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item5}</Col><Col>{serviceeleven.list1.price5}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item6}</Col><Col>{serviceeleven.list1.price6}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item7}</Col><Col>{serviceeleven.list1.price7}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item8}</Col><Col>{serviceeleven.list1.price8}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item9}</Col><Col>{serviceeleven.list1.price9}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item10}</Col><Col>{serviceeleven.list1.price10}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item11}</Col><Col>{serviceeleven.list1.price11}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item12}</Col><Col>{serviceeleven.list1.price12}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list1.item13}</Col><Col>{serviceeleven.list1.price13}</Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <Row>
+                                <Col>
+                                    <h4>{serviceeleven.type2}</h4>
+                                    <Row>
+                                        <Col>{serviceeleven.list2.item1}</Col><Col>{serviceeleven.list2.price1}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list2.item2}</Col><Col>{serviceeleven.list2.price2}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list2.item3}</Col><Col>{serviceeleven.list2.price3}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list2.item4}</Col><Col>{serviceeleven.list2.price4}</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>{serviceeleven.list2.item5}</Col><Col>{serviceeleven.list2.price5}</Col>
+                                    </Row>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Container>
@@ -1260,6 +1507,7 @@ export const servicePageQuery = graphql`
                             }
                         }
                     }
+                    title
                     type1
                     list1{
                         item1
@@ -1406,6 +1654,7 @@ export const servicePageQuery = graphql`
                         }
                     }
                     title
+                    type1
                     list1{
                         item1
                         price1
