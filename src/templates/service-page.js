@@ -168,10 +168,10 @@ export const ServicePageTemplate = ({
                                     <Col xs="auto" md="auto">
                                         <h5>Price:</h5>
                                     </Col>
-                                    <Col xs="auto" md="auto">
+                                    <Col xs={4} md="auto">
                                         <p>Female: {servicetwo.price1.female}</p>
                                     </Col> 
-                                    <Col xs="auto" md="auto">
+                                    <Col xs={4} md="auto">
                                         <p>Male: {servicetwo.price1.male}</p>
                                     </Col> 
                                 </Row><br/>
@@ -185,10 +185,10 @@ export const ServicePageTemplate = ({
                                     <Col xs="auto" md="auto">
                                         <h5>Price:</h5>
                                     </Col>
-                                    <Col xs="auto" md="auto">
+                                    <Col xs={4} md="auto">
                                         <p>Female: {servicetwo.price2.female}</p>
                                     </Col> 
-                                    <Col xs="auto" md="auto">
+                                    <Col xs={4} md="auto">
                                         <p>Male: {servicetwo.price2.male}</p>
                                     </Col> 
                                 </Row>
@@ -301,58 +301,58 @@ export const ServicePageTemplate = ({
                             </Col>
                             <Col xs={{span: 12, order: 12}} md={{span: 9, order: 1}}>
                                 <Row>
-                                    <Col>{servicefour.list1.item1}</Col><Col>{servicefour.list1.price1}</Col>
-                                    <Col>{servicefour.list1.item2}</Col><Col>{servicefour.list1.price2}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item1}</Col><Col xs={6} md={3}>{servicefour.list1.price1}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item2}</Col><Col xs={6} md={3}>{servicefour.list1.price2}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item5}</Col><Col>{servicefour.list1.price5}</Col>
-                                    <Col>{servicefour.list1.item6}</Col><Col>{servicefour.list1.price6}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item5}</Col><Col xs={6} md={3}>{servicefour.list1.price5}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item6}</Col><Col xs={6} md={3}>{servicefour.list1.price6}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item7}</Col><Col>{servicefour.list1.price7}</Col>
-                                    <Col>{servicefour.list1.item8}</Col><Col>{servicefour.list1.price8}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item7}</Col><Col xs={6} md={3}>{servicefour.list1.price7}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item8}</Col><Col xs={6} md={3}>{servicefour.list1.price8}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item9}</Col><Col>{servicefour.list1.price9}</Col>
-                                    <Col>{servicefour.list1.item10}</Col><Col>{servicefour.list1.price10}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item9}</Col><Col xs={6} md={3}>{servicefour.list1.price9}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item10}</Col><Col xs={6} md={3}>{servicefour.list1.price10}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item12}</Col><Col>{servicefour.list1.price12}</Col>
-                                    <Col>{servicefour.list1.item13}</Col><Col>{servicefour.list1.price13}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item12}</Col><Col xs={6} md={3}>{servicefour.list1.price12}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item13}</Col><Col xs={6} md={3}>{servicefour.list1.price13}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item14}</Col><Col>{servicefour.list1.price14}</Col>
-                                    <Col>{servicefour.list1.item15}</Col><Col>{servicefour.list1.price15}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item14}</Col><Col xs={6} md={3}>{servicefour.list1.price14}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item15}</Col><Col xs={6} md={3}>{servicefour.list1.price15}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item17}</Col><Col>{servicefour.list1.price17}</Col>
-                                    <Col>{servicefour.list1.item18}</Col><Col>{servicefour.list1.price18}</Col>                                    
+                                    <Col xs={6} md={3}>{servicefour.list1.item17}</Col><Col xs={6} md={3}>{servicefour.list1.price17}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item18}</Col><Col xs={6} md={3}>{servicefour.list1.price18}</Col>                                    
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item11}</Col><Col>{servicefour.list1.price11}</Col>
-                                    <Col>{servicefour.list1.item16}</Col><Col>{servicefour.list1.price16}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item11}</Col><Col xs={6} md={3}>{servicefour.list1.price11}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item16}</Col><Col xs={6} md={3}>{servicefour.list1.price16}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list1.item3}</Col><Col>{servicefour.list1.price3}</Col>
-                                    <Col>{servicefour.list1.item4}</Col><Col>{servicefour.list1.price4}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item3}</Col><Col xs={6} md={3}>{servicefour.list1.price3}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list1.item4}</Col><Col xs={6} md={3}>{servicefour.list1.price4}</Col>
                                 </Row>
-                                <p>*{servicefour.text}</p>
+                                <br/><p>*{servicefour.text}</p>
                                 <h5>{servicefour.type}</h5>
                                 <Row>
-                                    <Col>{servicefour.list2.item1}</Col><Col>{servicefour.list2.price1}</Col>
-                                    <Col>{servicefour.list2.item2}</Col><Col>{servicefour.list2.price2}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item1}</Col><Col xs={6} md={3}>{servicefour.list2.price1}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item2}</Col><Col xs={6} md={3}>{servicefour.list2.price2}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list2.item3}</Col><Col>{servicefour.list2.price3}</Col>
-                                    <Col>{servicefour.list2.item4}</Col><Col>{servicefour.list2.price4}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item3}</Col><Col xs={6} md={3}>{servicefour.list2.price3}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item4}</Col><Col xs={6} md={3}>{servicefour.list2.price4}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list2.item5}</Col><Col>{servicefour.list2.price5}</Col>
-                                    <Col>{servicefour.list2.item6}</Col><Col>{servicefour.list2.price6}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item5}</Col><Col xs={6} md={3}>{servicefour.list2.price5}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item6}</Col><Col xs={6} md={3}>{servicefour.list2.price6}</Col>
                                 </Row>
                                 <Row>
-                                    <Col>{servicefour.list2.item7}</Col><Col>{servicefour.list2.price7}</Col>
-                                    <Col>{servicefour.list2.item8}</Col><Col>{servicefour.list2.price8}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item7}</Col><Col xs={6} md={3}>{servicefour.list2.price7}</Col>
+                                    <Col xs={6} md={3}>{servicefour.list2.item8}</Col><Col xs={6} md={3}>{servicefour.list2.price8}</Col>
                                 </Row>
                             </Col>
                         </Row>
