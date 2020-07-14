@@ -6,7 +6,7 @@ import { Container, Row} from 'react-bootstrap'
 import IndexFeatures from '../components/IndexFeatures'
 
 export const IndexPageTemplate = ({
-  image1,
+  image,
   heading,
   subheading1,
   occasions,
@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
 <div>
   <div className="full-width-image-container margin-top-0"
     style={{
-            backgroundImage: `url(${!!image1.childImageSharp ? image1.childImageSharp.fluid.src : image1})`,
+            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
             backgroundPosition: `center center`,
             backgroundAttachment: `fixed`,
             backgroundRepeat: 'no-repeat',
@@ -49,12 +49,15 @@ export const IndexPageTemplate = ({
         <IndexFeatures gridItems={monthly.blurbs} />
       </Row>
     </Container>
+    <Container fluid className="themeColor content-padding fontColor">
+      add more stuff
+    </Container>
   </div>
 </div>
 )
 
 IndexPageTemplate.propTypes = {
-  image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   subheading1: PropTypes.string,
   occasions: PropTypes.shape({
@@ -76,7 +79,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image1={frontmatter.image1}
+        image={frontmatter.image}
         heading={frontmatter.heading}
         subheading1={frontmatter.subheading1}
         subheading2={frontmatter.subheading2}
@@ -103,9 +106,9 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter{
-        image1 {
+        image{
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 240, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

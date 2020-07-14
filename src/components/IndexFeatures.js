@@ -8,7 +8,7 @@ const FeatureGrid = ({ gridItems }) => (
   <Container fluid>
     <Row >
       {gridItems.map(item => (
-        <Col key={item.text} xs={12} md={4} className="content-padding">
+        <Col key={item.text} xs={12} md={4} className="text-center content-padding">
           <div
             style={{
               width: '300px',

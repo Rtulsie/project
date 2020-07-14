@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image1: /img/firstIndexImage.jpg
+image: /img/firstIndexImage.jpg
 heading: Specials
 subheading1: Special Occasions
 occasions:
@@ -17,4 +17,10 @@ monthly:
     blurbs: 
         - image: /img/item1.jpeg
         - image: /img/item1.jpeg
+text1: Services
+image1: /img/firstIndexImage.jpg
+text2: Products
+image2: /img/firstIndexImage.jpg
+text3: Gallery
+image3: /img/firstIndexImage.jpg
 ---
