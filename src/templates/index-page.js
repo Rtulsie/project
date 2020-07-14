@@ -2,31 +2,72 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Container} from 'react-bootstrap'
-import Img from 'gatsby-image'
+import { Container, Row} from 'react-bootstrap'
+import IndexFeatures from '../components/IndexFeatures'
 
 export const IndexPageTemplate = ({
   image1,
-  image2,
-  image3,
-  image4,
-  image5,
-}) => (
-  <Container fluid>
-      <Img style={{maxWidth: "100%", paddingTop:"100px"}} fluid={image1.childImageSharp.fluid} alt="First" />
-    <Container>
+  heading,
+  subheading1,
+  occasions,
+  subheading2,
+  weekly,
+  subheading3,
+  monthly,
 
-      HOME PAGE CONTENT GOES HERE!!!!!!!!!
+}) => (
+<div>
+  <div className="full-width-image-container margin-top-0"
+    style={{
+            backgroundImage: `url(${!!image1.childImageSharp ? image1.childImageSharp.fluid.src : image1})`,
+            backgroundPosition: `center center`,
+            backgroundAttachment: `fixed`,
+            backgroundRepeat: 'no-repeat',
+          }}>
+  </div>
+  <div>
+    <Container>
+      <Row className="justify-content-center">
+        <h1>{heading}</h1>
+      </Row>
+      <Row>
+        <h3>{subheading1}</h3>
+      </Row>
+      <Row>
+        <IndexFeatures gridItems={occasions.blurbs} />
+      </Row>
+      <Row>
+        <h3>{subheading2}</h3>
+      </Row>
+      <Row>
+        <IndexFeatures gridItems={weekly.blurbs} />
+      </Row>
+      <Row>
+        <h3>{subheading3}</h3>
+      </Row>
+      <Row>
+        <IndexFeatures gridItems={monthly.blurbs} />
+      </Row>
     </Container>
-  </Container>
+  </div>
+</div>
 )
 
 IndexPageTemplate.propTypes = {
   image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image5: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heading: PropTypes.string,
+  subheading1: PropTypes.string,
+  occasions: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  subheading2: PropTypes.string,
+  weekly: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  subheading3: PropTypes.string,
+  monthly: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -36,10 +77,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image1={frontmatter.image1}
-        image2={frontmatter.image2}
-        image3={frontmatter.image3}
-        image4={frontmatter.image4}
-        image5={frontmatter.image5}
+        heading={frontmatter.heading}
+        subheading1={frontmatter.subheading1}
+        subheading2={frontmatter.subheading2}
+        subheading3={frontmatter.subheading3}
+        occasions={frontmatter.occasions}
+        weekly={frontmatter.weekly}
+        monthly={frontmatter.monthly}
       />
     </Layout>
   )
@@ -66,31 +110,40 @@ export const pageQuery = graphql`
             }
           }
         }
-        image2 {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        heading
+        subheading1
+        occasions {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
-        image3 {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        subheading2
+        weekly {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
-        image4 {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        image5 {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        subheading3
+        monthly {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
