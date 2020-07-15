@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import { Container, Row} from 'react-bootstrap'
+import { Container, Row, Col} from 'react-bootstrap'
 import IndexFeatures from '../components/IndexFeatures'
+import Img from 'gatsby-image'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,6 +15,9 @@ export const IndexPageTemplate = ({
   weekly,
   subheading3,
   monthly,
+  services,
+  products,
+  gallery,
 
 }) => (
 <div>
@@ -50,7 +54,32 @@ export const IndexPageTemplate = ({
       </Row>
     </Container>
     <Container fluid className="themeColor content-padding fontColor">
-      add more stuff
+      <Row>
+        <Col xs={12} md={4} className="text-center">
+          <h2>{services.text}</h2>
+          <Link to='/services'>
+            <Img style = {{ width: 'auto', height: '300px'}} fluid={services.image.childImageSharp.fluid} alt="Services" />
+          </Link>
+          <p>{services.description}</p>
+        </Col>
+        <Col xs={12} md={4} className="text-center">
+          <h2>{products.text}</h2>
+          <Link to='/products'>
+            <Img style = {{ width: 'auto', height: '300px'}} fluid={products.image.childImageSharp.fluid} alt="Products" />
+          </Link>
+          <p>{products.description}</p>
+        </Col>
+        <Col xs={12} md={4} className="text-center">
+          <h2>{gallery.text}</h2>
+          <Link to='/gallery'>
+            <Img style = {{ width: 'auto', height: '300px'}} fluid={gallery.image.childImageSharp.fluid} alt="Gallery" />
+          </Link>
+          <p>{gallery.description}</p>
+        </Col>
+      </Row>
+    </Container>
+    <Container>
+      Maybe add About area and contact
     </Container>
   </div>
 </div>
@@ -71,6 +100,21 @@ IndexPageTemplate.propTypes = {
   monthly: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  services: PropTypes.shape({
+    text: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    description: PropTypes.string,
+  }),
+  products: PropTypes.shape({
+    text: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    description: PropTypes.string,
+  }),
+  gallery: PropTypes.shape({
+    text: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    description: PropTypes.string,
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -87,6 +131,9 @@ const IndexPage = ({ data }) => {
         occasions={frontmatter.occasions}
         weekly={frontmatter.weekly}
         monthly={frontmatter.monthly}
+        services={frontmatter.services}
+        products={frontmatter.products}
+        gallery={frontmatter.gallery}
       />
     </Layout>
   )
@@ -149,6 +196,39 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+        services {
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          description
+        }
+        products {
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          description
+        }
+        gallery {
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          description
         }
       }
     }

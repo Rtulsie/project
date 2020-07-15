@@ -17,10 +17,16 @@ monthly:
     blurbs: 
         - image: /img/item1.jpeg
         - image: /img/item1.jpeg
-text1: Services
-image1: /img/firstIndexImage.jpg
-text2: Products
-image2: /img/firstIndexImage.jpg
-text3: Gallery
-image3: /img/firstIndexImage.jpg
+services:
+    text: Services
+    image: /img/firstIndexImage.jpg
+    description: Say nice stuff about your services and thing.
+products:
+    text: Products
+    image: /img/firstIndexImage.jpg
+    description: Say nice stuff about your Products and thing.
+gallery:
+    text: Gallery
+    image: /img/firstIndexImage.jpg
+    description: Say nice stuff about your photos and thing.
 ---
