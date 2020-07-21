@@ -125,7 +125,7 @@ ref={el=> {location = el}}*/
                       className="filterWhite"
                     />
                   </a>
-                  <a title="instagram" href="tel:+18683036051" target="_blank" className="socialIcon">
+                  <a title="whatsapp" href="tel:+18683036051" target="_blank" className="socialIcon">
                     <img
                       src={whatsapp}
                       alt="Whatsapp"

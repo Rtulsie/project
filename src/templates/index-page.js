@@ -18,9 +18,10 @@ export const IndexPageTemplate = ({
   services,
   products,
   gallery,
-
+  about,
+  secondImage,
 }) => (
-<div>
+<div classname="content">
   <div className="full-width-image-container margin-top-0"
     style={{
             backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
@@ -53,7 +54,7 @@ export const IndexPageTemplate = ({
         <IndexFeatures gridItems={monthly.blurbs} />
       </Row>
     </Container>
-    <Container fluid className="themeColor content-padding fontColor">
+    <Container fluid className="themeColor fontColor" style={{paddingTop:'30px'}}>
       <Row>
         <Col xs={12} md={4} className="text-center">
           <h2>{services.text}</h2>
@@ -79,7 +80,57 @@ export const IndexPageTemplate = ({
       </Row>
     </Container>
     <Container>
-      Maybe add About area and contact
+      <Row>
+        <div
+          className="full-width-image-container text-center content"
+          style={{
+            backgroundImage: `url(${about.background.childImageSharp?about.background.childImageSharp.fluid.src:about.background})`,
+            backgroundPosition: `center center`,
+            backgroundAttachment: `fixed`,
+            backgroundRepeat: 'no-repeat',
+          }}>
+            <div
+              style={{
+                  display: 'flex',
+                  height: '150px',
+                  lineHeight: '1',
+                  justifyContent: 'space-around',
+                  alignItems: 'center',
+                  flexDirection: 'column',
+              }}
+              data-sal="slide-up"
+              data-sal-duration ="3000"
+              data-sal-delay="500"
+              data-sal-easing="ease"
+              >
+              <h1
+                  className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                  style={{
+                      //boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+                      //backgroundColor: '#E3217C',
+                      //color: 'pink',
+                      //padding: '1rem',
+                      //fontSize: '5rem',
+                  }}
+                >{about.title}
+                </h1>
+                <h4>{about.subheading}</h4>
+                <p>{about.description}</p>
+                <a href="tel:+18683036051">{about.contact}</a>
+            </div>
+          </div>
+      </Row>
+    </Container>
+    <Container>
+      <Row>
+        <div
+          className="full-width-image-container adjustment-padding"
+          style={{
+            backgroundImage: `url(${secondImage.childImageSharp?secondImage.childImageSharp.fluid.src:secondImage})`,
+            backgroundPosition: `center center`,
+          }}
+        />
+        </Row>
     </Container>
   </div>
 </div>
@@ -115,6 +166,14 @@ IndexPageTemplate.propTypes = {
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     description: PropTypes.string,
   }),
+  about: PropTypes.shape({
+    title: PropTypes.string,
+    subheading: PropTypes.string,
+    description: PropTypes.string,
+    contact: PropTypes.string,
+    background: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
+  secondImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const IndexPage = ({ data }) => {
@@ -134,6 +193,8 @@ const IndexPage = ({ data }) => {
         services={frontmatter.services}
         products={frontmatter.products}
         gallery={frontmatter.gallery}
+        about={frontmatter.about}
+        secondImage={frontmatter.secondImage}
       />
     </Layout>
   )
@@ -155,7 +216,7 @@ export const pageQuery = graphql`
       frontmatter{
         image{
           childImageSharp {
-            fluid(maxWidth: 240, quality: 100) {
+            fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -166,7 +227,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -178,7 +239,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -190,7 +251,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -201,7 +262,7 @@ export const pageQuery = graphql`
           text
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -212,7 +273,7 @@ export const pageQuery = graphql`
           text
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(maxWidth: 2048 quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -223,12 +284,32 @@ export const pageQuery = graphql`
           text
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           description
+        }
+        about {
+          title
+          subheading
+          description
+          contact
+          background {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        secondImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
