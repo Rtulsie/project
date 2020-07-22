@@ -1,7 +1,5 @@
 import React, {useRef, useEffect} from 'react'
 import '../utils/fontawesome'
-import ButtonLink from '../utils/fontawesome'
-import { TweenMax, Power3, TimelineLite} from "gsap";
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import whatsapp from '../img/social/whatsapp.svg'

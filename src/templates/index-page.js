@@ -85,7 +85,7 @@ export const IndexPageTemplate = ({
           className="full-width-image-container text-center content"
           style={{
             backgroundImage: `url(${about.background.childImageSharp?about.background.childImageSharp.fluid.src:about.background})`,
-            backgroundPosition: `center center`,
+            //backgroundPosition: `center center`,
             backgroundAttachment: `fixed`,
             backgroundRepeat: 'no-repeat',
           }}>
@@ -97,26 +97,36 @@ export const IndexPageTemplate = ({
                   justifyContent: 'space-around',
                   alignItems: 'center',
                   flexDirection: 'column',
+                  paddingLeft:'30px',
+                  paddingRight:'30px',
               }}
-              data-sal="slide-up"
-              data-sal-duration ="3000"
-              data-sal-delay="500"
-              data-sal-easing="ease"
               >
               <h1
                   className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-                  style={{
-                      //boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                      //backgroundColor: '#E3217C',
-                      //color: 'pink',
-                      //padding: '1rem',
-                      //fontSize: '5rem',
-                  }}
+                  data-sal="slide-up"
+                  data-sal-duration ="3000"
+                  data-sal-delay="400"
+                  data-sal-easing="ease"
                 >{about.title}
                 </h1>
-                <h4>{about.subheading}</h4>
-                <p>{about.description}</p>
-                <a href="tel:+18683036051">{about.contact}</a>
+                <h4 
+                  data-sal="slide-up"
+                  data-sal-duration ="1000"
+                  data-sal-delay="600"
+                  data-sal-easing="ease"
+                >{about.subheading}</h4>
+                <p
+                  data-sal="slide-up"
+                  data-sal-duration ="1000"
+                  data-sal-delay="800"
+                  data-sal-easing="ease"
+                >{about.description}</p>
+                <a href="tel:+18683036051"
+                  data-sal="slide-up"
+                  data-sal-duration ="1000"
+                  data-sal-delay="1000"
+                  data-sal-easing="ease"
+                >{about.contact}</a>
             </div>
           </div>
       </Row>
