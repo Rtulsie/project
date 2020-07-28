@@ -15,6 +15,10 @@ html {
     background-image: radial-gradient( #E58AB7, #502E3E);    
   }
 
+  .themeColor2{
+    background-color: whitesmoke;    
+  }
+
   .content-padding{
     padding-bottom: 4.5em;
   }
@@ -44,7 +48,7 @@ html {
     padding-right: 22px;
   }
 
-  .fontColor, h2.fontColor{
+  .fontColor, h2.fontColor, h1.fontColor{
     color: white;
   }
 
