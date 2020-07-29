@@ -5,6 +5,12 @@ import Layout from '../../components/Layout'
 import Img from '../../utils/fontawesome';
 import {Container, Row, Col} from 'react-bootstrap'
 
+import contact from '../../img/contact/contact.jpeg'
+import contact1 from '../../img/contact/contact1.jpg'
+import contact2 from '../../img/contact/contact2.jpeg'
+import contact3 from '../../img/contact/contact3.jpeg'
+import contact4 from '../../img/contact/contact4.jpeg'
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -40,10 +46,16 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <Container className="themeColor">
-          <h1 className="fontColor text-center">Contact Us</h1>
+          <h1 className="fontColor text-center" style={{paddingTop:'30px'}}>Contact Us</h1>
             <Row>
-              <Col>Picture</Col><Col>Map</Col>
+              <Col xs={12} md={8} style={{textAlign:'center'}}>
+                <img src={contact} alt="Polish Me Pretty Interior" style={{height:'290px'}}/>
+              </Col>
+              <Col>
+                Map
+              </Col>
             </Row>
+            <br/>
             <Row>
               <Col xs={12} md={4}>
                 <h5>ADDRESS</h5>
@@ -131,10 +143,31 @@ export default class Index extends React.Component {
                 </form>
               </Col>
             </Row>
+            <br/>
             <Row>
-              Line of pictures
+              <Col xs={6} md={2}>
+                <img src={contact1} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
+              <div/>
+              <Col xs={6} md={2}>
+                <img src={contact2} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
+              <Col xs={6} md={2}>
+                <img src={contact3} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
+              <Col xs={6} md={2}>
+                <img src={contact4} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
+              <Col xs={6} md={2}>
+                <img src={contact4} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
+              <Col xs={6} md={2}>
+                <img src={contact4} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+              </Col>
             </Row>
+            <div style={{paddingBottom:'30px'}}/>
         </Container>
+        <div className="adjustment-padding"/>
       </Layout>
     )
   }
