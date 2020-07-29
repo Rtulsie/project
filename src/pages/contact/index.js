@@ -9,7 +9,7 @@ import contact from '../../img/contact/contact.jpeg'
 import contact1 from '../../img/contact/contact1.jpg'
 import contact2 from '../../img/contact/contact2.jpeg'
 import contact3 from '../../img/contact/contact3.jpeg'
-import contact4 from '../../img/contact/contact4.jpeg'
+import contact4 from '../../../static/img/contact4.jpeg'
 
 function encode(data) {
   return Object.keys(data)
@@ -146,14 +146,14 @@ export default class Index extends React.Component {
             <br/>
             <Row>
               <Col xs={6} md={2}>
-                <img src={contact1} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+                <img src={contact1} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px', marginBottom:'30px'}}/>
               </Col>
               <div/>
               <Col xs={6} md={2}>
                 <img src={contact2} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
               </Col>
               <Col xs={6} md={2}>
-                <img src={contact3} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
+                <img src={contact3} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px', marginBottom:'30px'}}/>
               </Col>
               <Col xs={6} md={2}>
                 <img src={contact4} alt="Polish Me Pretty Interior" style={{width:'150px', height:'120px'}}/>
