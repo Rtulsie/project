@@ -19,7 +19,7 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <h4>{item.heading}</h4>
           <p>{item.text}<br/></p>
-          <a className="button is-link" href="career/upload">
+          <a className="button is-link" href="/career/upload">
             Upload
           </a>
         </Col>
