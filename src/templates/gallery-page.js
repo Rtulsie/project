@@ -122,8 +122,6 @@ GalleryPage.propTypes = {
                                 }
                             }
                         }
-                        heading
-                        text
                     }
                 }
             }

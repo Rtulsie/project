@@ -33,13 +33,6 @@ collections:
           - {label: Gallery, name: gallery, widget: object, fields: [{label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: string}]}
           - {label: About, name: about, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Description, name: description, widget: text}, {label: Contact, name: contact, widget: string}, {label: Background, name: background, widget: image}]}
           - {label: Last Image, name: secondImage, widget: image}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
@@ -51,6 +44,14 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Item Name, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Price, name: price, widget: string}]}]}
           - {label: Full_image, name: full_image, widget: image}
+      - file: "src/pages/gallery/index.md"
+        label: "Gallery Page"
+        name: "gallery"
+        fields:
+          - {label: Title, name: name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Caption, name: imgcaption, widget: string}
+          - {label: Images, name: intro, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
       - file: "src/pages/services/index.md"
         label: "Services"
         name: "Services"
