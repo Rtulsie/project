@@ -23,7 +23,7 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading1, widget: string}
-          - {label: Occasions, name: occasions, widget: object, fields: [{label: Uploads, name: blurbs, widget: list}, fields: [{label: Image, name: image, widget: image}]}]}
+          - {label: Occasions, name: occasions, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
