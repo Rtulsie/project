@@ -22,8 +22,17 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading1, widget: string}
+          - {label: Special, name: subheading1, widget: string}
           - {label: Occasions, name: occasions, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
+          - {label: Weekly, name: subheading2, widget: string}
+          - {label: Weekly, name: weekly, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
+          - {label: Monthly, name: subheading3, widget: string}
+          - {label: Monthly, name: monthly, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
+          - {label: Services, name: services, widget: object, fields: [{label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: string}]}
+          - {label: Products, name: products, widget: object, fields: [{label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: string}]}
+          - {label: Gallery, name: gallery, widget: object, fields: [{label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: string}]}
+          - {label: About, name: about, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Subheading, name: subheading, widget: string}, {label: Description, name: description, widget: text}, {label: Contact, name: contact, widget: string}, {label: Background, name: background, widget: image}]}
+          - {label: Last Image, name: secondImage, widget: image}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
