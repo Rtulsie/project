@@ -48,7 +48,7 @@ collections:
         label: "Gallery Page"
         name: "gallery"
         fields:
-          - {label: Title, name: name: title, widget: string}
+          - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Caption, name: imgcaption, widget: string}
           - {label: Images, name: intro, widget: object, fields: [{label: Uploads, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
