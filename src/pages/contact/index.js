@@ -48,11 +48,11 @@ export default class Index extends React.Component {
         <Container className="themeColor">
           <h1 className="fontColor text-center" style={{paddingTop:'30px'}}>Contact Us</h1>
             <Row>
-              <Col xs={12} md={8} style={{textAlign:'center'}}>
+              <Col xs={12} md={6} style={{textAlign:'center'}}>
                 <img src={contact} alt="Polish Me Pretty Interior" style={{height:'290px'}}/>
               </Col>
-              <Col>
-                Map
+              <Col xs={12} md={6} style={{textAlign:'center'}}>
+                <img src={contact} alt="Polish Me Pretty Interior" style={{height:'290px'}}/>
               </Col>
             </Row>
             <br/>
@@ -68,7 +68,7 @@ export default class Index extends React.Component {
                     <br/>Trinidad and Tobago.
                   </div>
                 </div>
-                <a  className="button is-link" href="tel:+18683036051">GET IN TOUCH</a>
+                <br/><br/><br/><a  className="button is-link" href="tel:+18683036051">GET IN TOUCH</a>
               </Col>
               <Col xs={12} md={4}>
                 <h5>OPENING HOURS</h5>

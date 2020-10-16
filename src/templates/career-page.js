@@ -20,6 +20,7 @@ export const CareerPageTemplate = ({
             <Row>
                 <CareerFeatures gridItems={intro.blurbs} />
             </Row>
+            <br/>
         </Container>
         
 )
